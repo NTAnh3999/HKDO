@@ -1,0 +1,14 @@
+.top-navigation {
+	@include flex(row, space-between, center);
+	background: $brand-yellow;
+	padding: 1rem 1.8rem;
+	&__list {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		@include flex(row, space-evenly, center);
+	}
+	&__item {
+		padding: 5px 8px;
+	}
+}

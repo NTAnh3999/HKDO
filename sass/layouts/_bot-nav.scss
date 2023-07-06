@@ -1,0 +1,35 @@
+.bot-navigation {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 0 1rem;
+
+	&__list {
+		@include flex(row, space-around, center);
+		list-style-type: none;
+		padding: 0;
+		border-top: 1px solid $neutral-grey-3;
+	}
+	&__item {
+		padding: 1.2rem 8px;
+		&.active {
+			color: $brand-blue;
+			border-top: 3px solid $brand-blue;
+			> * {
+				color: $brand-blue;
+			}
+		}
+	}
+	&__link {
+		@include flex(column, center, center);
+		color: $neutral-grey-2;
+		text-decoration: none;
+		font-size: 1.2rem;
+		line-height: 1.38rem;
+	}
+
+	&__text {
+		padding-top: 4px;
+		// color: $neutral-black-light;
+	}
+}
