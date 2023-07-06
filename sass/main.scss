@@ -8,8 +8,6 @@
 @import "./layouts/header.scss";
 @import "./layouts/footer";
 
-@import "./pages/home";
-
 // BASE styles
 * {
 	padding: 0;
@@ -20,6 +18,5 @@ html {
 	font-size: 62.5%;
 }
 body {
-	background: $body-color;
 	font-family: Arial;
 }
