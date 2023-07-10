@@ -1,0 +1,10 @@
+.title {
+	padding: 1.6rem;
+	@include flex(row, flex-start, center);
+	&__text {
+		font-size: 1.6rem;
+		font-weight: 700;
+		color: $brand-accent;
+		margin-left: 8px;
+	}
+}

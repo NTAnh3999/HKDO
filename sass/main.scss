@@ -1,8 +1,16 @@
 @import "variables";
 @import "mixins";
+@import "utilities.scss";
 
 @import "./components/logo";
 @import "./components/buttons";
+@import "./components/title";
+@import "./components/input";
+@import "./components/search-bar";
+@import "./components/list-item";
+@import "./components/checkbox";
+@import "./components/pagination";
+@import "./components/options";
 
 @import "./layouts/top-nav";
 @import "./layouts/bot-nav";
@@ -19,4 +27,10 @@ html {
 }
 body {
 	font-family: Arial;
+	max-width: 576px;
+	width: 100%;
+	margin: 0 auto;
+}
+p {
+	margin-bottom: 0 !important;
 }

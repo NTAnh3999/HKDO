@@ -1,0 +1,25 @@
+.checkbox__custom {
+	width: 1.8rem;
+	height: 1.8rem;
+	border: 0.2rem solid $neutral-grey-2;
+	border-radius: 3px;
+	cursor: pointer;
+	& > svg {
+		opacity: 0;
+		visibility: visible;
+	}
+	&:has(+ input:checked) {
+		background-color: $infor-500;
+		border: 0.2rem solid $infor-500;
+	}
+	&:has(+ input:checked) > svg {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+.box__select {
+	display: none;
+}
+.box__select.active {
+	display: flex;
+}
