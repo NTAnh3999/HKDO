@@ -1,12 +1,18 @@
 @import "variables";
 @import "mixins";
+@import "utilities";
 
 @import "./components/logo";
 @import "./components/buttons";
+@import "./components/title";
+@import "./components/input";
+@import "./components/search-bar";
+@import "./components/pagination";
+@import "./components/product-item";
 
 @import "./layouts/top-nav";
 @import "./layouts/bot-nav";
-@import "./layouts/footer";
+@import "./layouts/main";
 
 // BASE styles
 * {

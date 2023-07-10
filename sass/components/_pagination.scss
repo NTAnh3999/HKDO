@@ -1,0 +1,20 @@
+.pagination {
+	padding: 1.2rem 1rem;
+	justify-content: center;
+}
+.page-item.active .page-link {
+	background-color: $brand-blue;
+	color: $white-color;
+	border: 1px solid $brand-blue;
+	z-index: 0;
+}
+.page-link {
+	color: $brand-blue;
+	padding: 1rem 1.4rem;
+	font-size: 1.6rem;
+	font-family: "Inter";
+	line-height: normal;
+	span {
+		font-weight: 600;
+	}
+}

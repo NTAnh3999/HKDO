@@ -1,0 +1,4 @@
+.search-bar {
+	@include flex(row, space-around, center);
+	padding: 1.2rem 0;
+}
