@@ -9,6 +9,9 @@
 @import "./components/search-bar";
 @import "./components/pagination";
 @import "./components/product-item";
+@import "./components/list-item";
+@import "./components/checkbox";
+@import "./components/options";
 
 @import "./layouts/top-nav";
 @import "./layouts/bot-nav";
@@ -25,4 +28,10 @@ html {
 }
 body {
 	font-family: Arial;
+	max-width: 576px;
+	width: 100%;
+	margin: 0 auto;
+}
+p {
+	margin-bottom: 0 !important;
 }

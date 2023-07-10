@@ -1,4 +1,26 @@
 .search-bar {
 	@include flex(row, space-around, center);
 	padding: 1.2rem 0;
+	// @include flex(row, flex-start, center);
+	// padding: 1.2rem 1.6rem;
+	gap: 1.2rem;
+
+	&__input,
+	&__btn {
+		font-size: 1.4rem;
+	}
+	&__input {
+		@include flex(row, flex-start, center);
+		flex: 1;
+		padding: 1.2rem;
+		&--receipts {
+			border-radius: 6px;
+			border: 1px solid $neutral-grey-2;
+			background-color: $neutral-white-light;
+			& > input {
+				background-color: $neutral-white-light;
+				padding: 0 0.8rem;
+			}
+		}
+	}
 }

@@ -4,10 +4,12 @@
 		border-radius: 6px;
 		border: 1px solid $neutral-grey-3;
 		font-size: 1.6rem;
-		padding: 1.2rem 4.2rem;
+		padding: 1.2rem;
 		outline: none;
 	}
 	&__search {
+		padding: 1.2rem 4.2rem;
+
 		&:focus {
 			border: 1px solid $brand-yellow;
 			background-color: $light-yellow;
@@ -27,4 +29,12 @@
 	&__barcode-icon {
 		right: 12px;
 	}
+	&[type="text"] {
+		background-color: $neutral-white-light;
+	}
+}
+.label__input {
+	font-size: 1.4rem;
+	line-height: 2.24rem;
+	color: $neutral-grey-1;
 }
