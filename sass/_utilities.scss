@@ -43,6 +43,32 @@
 		margin-top: 2.4rem;
 	}
 }
+.text {
+	&__brand-blue {
+		color: $brand-blue;
+	}
+	&__success-600 {
+		color: $success-600;
+	}
+	&__brand-accent {
+		color: $brand-accent;
+	}
+	&__neutral-grey-1 {
+		color: $neutral-grey-1;
+	}
+}
+
+.bg {
+	&__neutral-grey-4 {
+		background-color: $neutral-grey-4;
+	}
+	&__brand-blue {
+		background-color: $brand-blue;
+	}
+	&__neutral-grey-2 {
+		background-color: $neutral-grey-2;
+	}
+}
 .mb {
 	&-8 {
 		margin-bottom: 0.8rem;
@@ -160,6 +186,37 @@
 		color: $error-500;
 	}
 }
+.px-12 {
+	padding-inline: 1.2rem;
+}
+.py-10 {
+	padding-block: 1rem;
+}
+.py-12 {
+	padding-block: 1.2rem;
+}
+.px-16 {
+	padding-inline: 1.6rem;
+}
+.gap-8 {
+	gap: 8px;
+}
+.gap-12 {
+	gap: 12px;
+}
+.fs-14 {
+	font-size: 1.4rem;
+}
+.fs-16 {
+	font-size: 1.6rem;
+}
+.fs-20 {
+	font-size: 2rem;
+}
+.line-height-224 {
+	line-height: 2.24rem;
+}
+
 .cursor-pointer {
 	cursor: pointer;
 }

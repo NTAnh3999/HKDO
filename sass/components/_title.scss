@@ -1,5 +1,6 @@
 .title {
 	padding: 1.6rem;
+	background-color: $neutral-grey-4;
 	@include flex(row, flex-start, center);
 	&__text {
 		font-size: 1.6rem;

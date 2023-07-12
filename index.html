@@ -87,6 +87,423 @@
 				</li>
 			</ul>
 		</nav>
+		<main class="main">
+			<div class="title">
+				<svg
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M20 3L22 7V20C22 20.2652 21.8946 20.5196 21.7071 20.7071C21.5196 20.8946 21.2652 21 21 21H3C2.73478 21 2.48043 20.8946 2.29289 20.7071C2.10536 20.5196 2 20.2652 2 20V7.004L4 3H20ZM20 9H4V19H20V9ZM12 10L16 14H13V18H11V14H8L12 10ZM18.764 5H5.236L4.237 7H19.764L18.764 5Z"
+						fill="#1B5A37"
+					/>
+				</svg>
+				<span class="title__text">Nhập mua/Chi tiền</span>
+			</div>
+			<div class="search-bar">
+				<div class="input__group">
+					<span class="input__search-icon">
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M10 18C11.775 17.9996 13.4988 17.4054 14.897 16.312L19.293 20.708L20.707 19.294L16.311 14.898C17.405 13.4997 17.9996 11.7754 18 10C18 5.589 14.411 2 10 2C5.589 2 2 5.589 2 10C2 14.411 5.589 18 10 18ZM10 4C13.309 4 16 6.691 16 10C16 13.309 13.309 16 10 16C6.691 16 4 13.309 4 10C4 6.691 6.691 4 10 4Z"
+								fill="#808080"
+							/>
+						</svg>
+					</span>
+					<input type="text" class="input__search" />
+					<span class="input__barcode-icon">
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M5 7H7V17H5V7ZM14 7H15V17H14V7ZM10 7H13V17H10V7ZM8 7H9V17H8V7ZM16 7H19V17H16V7Z"
+								fill="#808080"
+							/>
+							<path
+								d="M4 5H8V3H4C2.897 3 2 3.897 2 5V9H4V5ZM4 21H8V19H4V15H2V19C2 20.103 2.897 21 4 21ZM20 3H16V5H20V9H22V5C22 3.897 21.103 3 20 3ZM20 19H16V21H20C21.103 21 22 20.103 22 19V15H20V19Z"
+								fill="#808080"
+							/>
+						</svg>
+					</span>
+				</div>
+				<button
+					type="button"
+					class="btn btn--warning-500"
+					data-bs-toggle="modal"
+					data-bs-target="#addProductInfoModal"
+				>
+					SP mới
+				</button>
+			</div>
+			<div
+				class="modal fade"
+				id="addProductInfoModal"
+				tabindex="-1"
+				aria-labelledby="addProductInfoModalLabel"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header border-0 flex-column">
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							></button>
+							<h5
+								class="modal-title text__brand-accent fs-3 fw-bold"
+								id="addProductInfoModalLabel"
+							>
+								Thêm chi tiết sản phẩm
+							</h5>
+						</div>
+						<div class="modal-body">...</div>
+						<div class="modal-footer">
+							<button
+								type="button"
+								class="btn btn-secondary"
+								data-bs-dismiss="modal"
+							>
+								Close
+							</button>
+							<button type="button" class="btn btn-primary">
+								Save changes
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="product-list container-fluid px-3">
+				<div class="product-item">
+					<div class="product-item__title">
+						<strong class="product-item__name fs-4">Paracetamol cảm cúm</strong>
+						<span class="product-item__id text-muted fs-5">DQG0000875</span>
+						<span
+							class="product-item__info-icon"
+							data-bs-toggle="modal"
+							data-bs-target="#productDetailModal"
+						>
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M12 2C6.486 2 2 6.486 2 12C2 17.514 6.486 22 12 22C17.514 22 22 17.514 22 12C22 6.486 17.514 2 12 2ZM12 20C7.589 20 4 16.411 4 12C4 7.589 7.589 4 12 4C16.411 4 20 7.589 20 12C20 16.411 16.411 20 12 20Z"
+									fill="#3279B7"
+								/>
+								<path d="M11 11H13V17H11V11ZM11 7H13V9H11V7Z" fill="#3279B7" />
+							</svg>
+						</span>
+					</div>
+					<ul class="list-group">
+						<li
+							class="list-group-item d-flex align-items-center justify-content-between"
+						>
+							<div class="list-group-item-left d-flex align-items-center">
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1.66663 2.5H18.3333V5.83333H1.66663V2.5ZM15.8333 6.66667H2.49996V15.8333C2.49996 16.2754 2.67555 16.6993 2.98811 17.0118C3.30068 17.3244 3.7246 17.5 4.16663 17.5H15.8333C16.2753 17.5 16.6992 17.3244 17.0118 17.0118C17.3244 16.6993 17.5 16.2754 17.5 15.8333V6.66667H15.8333ZM13.3333 11.6667H6.66663V10H13.3333V11.6667Z"
+										fill="#B2B2B2"
+									/>
+								</svg>
+								<span class="list-group-item-text ps-2 fs-5 text__brand-blue"
+									>Viên</span
+								>
+							</div>
+							<span class="fs-5 text__success-600 fw-bold">2.000 đ</span>
+						</li>
+						<li
+							class="list-group-item d-flex align-items-center justify-content-between"
+						>
+							<div class="d-flex align-items-center">
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1.66663 2.5H18.3333V5.83333H1.66663V2.5ZM15.8333 6.66667H2.49996V15.8333C2.49996 16.2754 2.67555 16.6993 2.98811 17.0118C3.30068 17.3244 3.7246 17.5 4.16663 17.5H15.8333C16.2753 17.5 16.6992 17.3244 17.0118 17.0118C17.3244 16.6993 17.5 16.2754 17.5 15.8333V6.66667H15.8333ZM13.3333 11.6667H6.66663V10H13.3333V11.6667Z"
+										fill="#B2B2B2"
+									/>
+								</svg>
+								<span class="ps-2 fs-5 text__brand-blue">Vỉ</span>
+							</div>
+							<span class="fs-5 text__success-600 fw-bold">12.000 đ</span>
+						</li>
+						<li
+							class="list-group-item d-flex align-items-center justify-content-between"
+						>
+							<div class="d-flex align-items-center">
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1.66663 2.5H18.3333V5.83333H1.66663V2.5ZM15.8333 6.66667H2.49996V15.8333C2.49996 16.2754 2.67555 16.6993 2.98811 17.0118C3.30068 17.3244 3.7246 17.5 4.16663 17.5H15.8333C16.2753 17.5 16.6992 17.3244 17.0118 17.0118C17.3244 16.6993 17.5 16.2754 17.5 15.8333V6.66667H15.8333ZM13.3333 11.6667H6.66663V10H13.3333V11.6667Z"
+										fill="#B2B2B2"
+									/>
+								</svg>
+								<span class="ps-2 fs-5 text__brand-blue">Hộp</span>
+							</div>
+							<span class="fs-5 text__success-600 fw-bold">60.000 đ</span>
+						</li>
+					</ul>
+				</div>
+				<div class="product-item">
+					<div class="product-item__title">
+						<strong class="product-item__name fs-4">Paracetamol Extra</strong>
+						<span class="product-item__id text-muted fs-5">DQG0000875</span>
+						<span
+							class="product-item__info-icon"
+							data-bs-toggle="modal"
+							data-bs-target="#productDetailModal"
+						>
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M12 2C6.486 2 2 6.486 2 12C2 17.514 6.486 22 12 22C17.514 22 22 17.514 22 12C22 6.486 17.514 2 12 2ZM12 20C7.589 20 4 16.411 4 12C4 7.589 7.589 4 12 4C16.411 4 20 7.589 20 12C20 16.411 16.411 20 12 20Z"
+									fill="#3279B7"
+								/>
+								<path d="M11 11H13V17H11V11ZM11 7H13V9H11V7Z" fill="#3279B7" />
+							</svg>
+						</span>
+					</div>
+					<ul class="list-group">
+						<li
+							class="list-group-item d-flex align-items-center justify-content-between"
+						>
+							<div class="list-group-item-left d-flex align-items-center">
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1.66663 2.5H18.3333V5.83333H1.66663V2.5ZM15.8333 6.66667H2.49996V15.8333C2.49996 16.2754 2.67555 16.6993 2.98811 17.0118C3.30068 17.3244 3.7246 17.5 4.16663 17.5H15.8333C16.2753 17.5 16.6992 17.3244 17.0118 17.0118C17.3244 16.6993 17.5 16.2754 17.5 15.8333V6.66667H15.8333ZM13.3333 11.6667H6.66663V10H13.3333V11.6667Z"
+										fill="#B2B2B2"
+									/>
+								</svg>
+								<span class="list-group-item-text ps-2 fs-5 text__brand-blue"
+									>Viên</span
+								>
+							</div>
+							<span class="fs-5 text__success-600 fw-bold">2.000 đ</span>
+						</li>
+						<li
+							class="list-group-item d-flex align-items-center justify-content-between"
+						>
+							<div class="d-flex align-items-center">
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1.66663 2.5H18.3333V5.83333H1.66663V2.5ZM15.8333 6.66667H2.49996V15.8333C2.49996 16.2754 2.67555 16.6993 2.98811 17.0118C3.30068 17.3244 3.7246 17.5 4.16663 17.5H15.8333C16.2753 17.5 16.6992 17.3244 17.0118 17.0118C17.3244 16.6993 17.5 16.2754 17.5 15.8333V6.66667H15.8333ZM13.3333 11.6667H6.66663V10H13.3333V11.6667Z"
+										fill="#B2B2B2"
+									/>
+								</svg>
+								<span class="ps-2 fs-5 text__brand-blue">Vỉ</span>
+							</div>
+							<span class="fs-5 text__success-600 fw-bold">12.000 đ</span>
+						</li>
+						<li
+							class="list-group-item d-flex align-items-center justify-content-between"
+						>
+							<div class="d-flex align-items-center">
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1.66663 2.5H18.3333V5.83333H1.66663V2.5ZM15.8333 6.66667H2.49996V15.8333C2.49996 16.2754 2.67555 16.6993 2.98811 17.0118C3.30068 17.3244 3.7246 17.5 4.16663 17.5H15.8333C16.2753 17.5 16.6992 17.3244 17.0118 17.0118C17.3244 16.6993 17.5 16.2754 17.5 15.8333V6.66667H15.8333ZM13.3333 11.6667H6.66663V10H13.3333V11.6667Z"
+										fill="#B2B2B2"
+									/>
+								</svg>
+								<span class="ps-2 fs-5 text__brand-blue">Hộp</span>
+							</div>
+							<span class="fs-5 text__success-600 fw-bold">60.000 đ</span>
+						</li>
+					</ul>
+				</div>
+				<div class="product-item">
+					<div class="product-item__title">
+						<strong class="product-item__name fs-4">Amoxicilin 500</strong>
+						<span class="product-item__id text-muted fs-5">DQG0000875</span>
+						<span
+							class="product-item__info-icon"
+							data-bs-toggle="modal"
+							data-bs-target="#productDetailModal"
+						>
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M12 2C6.486 2 2 6.486 2 12C2 17.514 6.486 22 12 22C17.514 22 22 17.514 22 12C22 6.486 17.514 2 12 2ZM12 20C7.589 20 4 16.411 4 12C4 7.589 7.589 4 12 4C16.411 4 20 7.589 20 12C20 16.411 16.411 20 12 20Z"
+									fill="#3279B7"
+								/>
+								<path d="M11 11H13V17H11V11ZM11 7H13V9H11V7Z" fill="#3279B7" />
+							</svg>
+						</span>
+					</div>
+					<ul class="list-group">
+						<li
+							class="list-group-item d-flex align-items-center justify-content-between"
+						>
+							<div class="list-group-item-left d-flex align-items-center">
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1.66663 2.5H18.3333V5.83333H1.66663V2.5ZM15.8333 6.66667H2.49996V15.8333C2.49996 16.2754 2.67555 16.6993 2.98811 17.0118C3.30068 17.3244 3.7246 17.5 4.16663 17.5H15.8333C16.2753 17.5 16.6992 17.3244 17.0118 17.0118C17.3244 16.6993 17.5 16.2754 17.5 15.8333V6.66667H15.8333ZM13.3333 11.6667H6.66663V10H13.3333V11.6667Z"
+										fill="#B2B2B2"
+									/>
+								</svg>
+								<span class="list-group-item-text ps-2 fs-5 text__brand-blue"
+									>Viên</span
+								>
+							</div>
+							<span class="fs-5 text__success-600 fw-bold">2.000 đ</span>
+						</li>
+						<li
+							class="list-group-item d-flex align-items-center justify-content-between"
+						>
+							<div class="d-flex align-items-center">
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1.66663 2.5H18.3333V5.83333H1.66663V2.5ZM15.8333 6.66667H2.49996V15.8333C2.49996 16.2754 2.67555 16.6993 2.98811 17.0118C3.30068 17.3244 3.7246 17.5 4.16663 17.5H15.8333C16.2753 17.5 16.6992 17.3244 17.0118 17.0118C17.3244 16.6993 17.5 16.2754 17.5 15.8333V6.66667H15.8333ZM13.3333 11.6667H6.66663V10H13.3333V11.6667Z"
+										fill="#B2B2B2"
+									/>
+								</svg>
+								<span class="ps-2 fs-5 text__brand-blue">Hộp</span>
+							</div>
+							<span class="fs-5 text__success-600 fw-bold">120.000 đ</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div
+				class="modal fade"
+				id="productDetailModal"
+				tabindex="-1"
+				aria-labelledby="productDetailModalLabel"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog" style="top: 6rem">
+					<div class="modal-content" style="border-radius: 1rem">
+						<div class="modal-header border-0 flex-column">
+							<button
+								type="button"
+								class="btn-close align-self-end"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							></button>
+							<h6
+								class="modal-title text__brand-accent fs-3 fw-bold"
+								id="productDetailModalLabel"
+							>
+								Chi tiết sản phẩm
+							</h6>
+						</div>
+						<div class="modal-body">
+							<div class="px-4 py-3 my-2">
+								<h6 class="text__neutral-grey-1 fs-5">Tên sản phẩm</h6>
+								<span class="fs-5">Paracetamol cảm cúm</span>
+							</div>
+							<div class="px-4 py-3 my-2">
+								<h6 class="text__neutral-grey-1 fs-5">Mã sản phẩm</h6>
+								<span class="fs-5">DQG0000875</span>
+							</div>
+							<div class="px-4 py-3 my-2">
+								<h6 class="text__neutral-grey-1 fs-5">Hoạt chất</h6>
+								<span class="fs-5">Paracetamol 500mg, Caffein 65mg</span>
+							</div>
+							<div class="px-4 py-3 my-2">
+								<h6 class="text__neutral-grey-1 fs-5">Hàm lượng</h6>
+								<span class="fs-5">500mg+25mg+5mg</span>
+							</div>
+							<div class="px-4 py-3 my-2">
+								<h6 class="text__neutral-grey-1 fs-5">Số đăng ký</h6>
+								<span class="fs-5">VD-16582-12</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav aria-label="Page navigation example">
+				<ul class="pagination">
+					<li class="page-item">
+						<a class="page-link" href="#" aria-label="Previous">
+							<span aria-hidden="true">&laquo;</span>
+						</a>
+					</li>
+					<li class="page-item active"><a class="page-link" href="#">1</a></li>
+					<li class="page-item"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item"><a class="page-link" href="#">4</a></li>
+					<li class="page-item"><a class="page-link" href="#">5</a></li>
+					<li class="page-item">
+						<a class="page-link" href="#" aria-label="Next">
+							<span aria-hidden="true">&raquo;</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</main>
 		<div class="bot-navigation">
 			<ul class="bot-navigation__list">
 				<li class="bot-navigation__item active">

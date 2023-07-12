@@ -1,9 +1,17 @@
 .btn {
+	font-weight: 700;
+	font-size: 1.4rem;
+	line-height: 2.24rem;
+	color: $white-color;
+	border-radius: 6px;
+	font-size: Arial;
 	outline: none;
 	padding-block: 1.2rem;
-	font-size: 1.4rem;
-	border-radius: 6px;
 	@include flex(row, center, center);
+	&--warning-500 {
+		background-color: $warning-500;
+		padding: 1.3rem 1.6rem;
+	}
 	&__border {
 		&--brand-blue {
 			border: 1px solid $brand-blue;
@@ -32,12 +40,11 @@
 			}
 		}
 	}
-}
-
-.btn__collapsed.collapsed .chevrons-down {
-	transform: rotate(0deg);
-}
-.btn__collapsed .chevrons-down {
-	transition: transform 0.5s ease;
-	transform: rotate(180deg);
+	&__collapsed .chevrons-down {
+		transition: transform 0.5s ease;
+		transform: rotate(180deg);
+	}
+	&__collapsed.collapsed .chevrons-down {
+		transform: rotate(0deg);
+	}
 }

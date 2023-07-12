@@ -1,0 +1,30 @@
+.product-item {
+	border-bottom: 1px solid $neutral-grey-2;
+	margin-bottom: 2rem;
+	&__title {
+		display: grid;
+		grid-template-columns: 3fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		margin-bottom: 1rem;
+		padding: 0 1rem;
+	}
+	&__name {
+		grid-row: 1 / 2;
+		grid-column: 1 / 2;
+	}
+	&__id {
+		grid-row: 2 / 3;
+		grid-column: 1 / 2;
+	}
+	&__info-icon {
+		grid-column: 2 / 3;
+		grid-row: 1 / span 2;
+		justify-self: end;
+		align-self: center;
+	}
+}
+.list-group-item {
+	border-top-width: 0;
+	border-left-width: 0;
+	border-right-width: 0;
+}
