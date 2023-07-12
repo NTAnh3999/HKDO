@@ -15,9 +15,21 @@
 	&__text {
 		&--brand-blue {
 			color: $brand-blue;
+			&:hover {
+				color: rgba($brand-blue, 0.8);
+			}
 		}
 		&--white-color {
 			color: $white-color;
+			&:hover {
+				color: rgba($white-color, 0.8);
+			}
+		}
+		&--infor-500 {
+			color: $infor-500;
+			&:hover {
+				color: rgba($infor-500, 0.8);
+			}
 		}
 	}
 }

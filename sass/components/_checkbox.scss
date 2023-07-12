@@ -23,3 +23,9 @@
 .box__select.active {
 	display: flex;
 }
+.box__not-select {
+	display: flex;
+}
+.box__not-select.active {
+	display: none;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form bao cao xuat/nhap kho</title>
+		<link rel="stylesheet" href="../bootstrap-5.0.2-dist/bootstrap.min.css" />
+		<link rel="stylesheet" href="../assets/styles/main.css" />
+		<script src="../bootstrap-5.0.2-dist/bootstrap.bundle.min.js"></script>
+	</head>
+	<body>
+		<!-- Form Import and Export Storehouse -->
+		<form action="/" class="">
+			<div class="text-end">
+				<svg
+					class="mt-16 cursor-pointer"
+					type="button "
+					data-bs-dismiss="modal"
+					width="24"
+					height="25"
+					viewBox="0 0 24 25"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M12 11.4561L16.95 6.5061L18.364 7.9201L13.414 12.8701L18.364 17.8201L16.95 19.2341L12 14.2841L7.04999 19.2341L5.63599 17.8201L10.586 12.8701L5.63599 7.9201L7.04999 6.5061L12 11.4561Z"
+						fill="#B2B2B2"
+					/>
+				</svg>
+			</div>
+			<p
+				class="fw-bold fs-20 text__brand-accent text-center"
+				style="line-height: 2.6rem"
+			>
+				Báo cáo xuất/nhập kho
+			</p>
+			<label class="label__input mt-8">Từ ngày</label>
+			<input type="date" class="input w-100 mb-8" />
+			<label class="label__input mt-8">Đến ngày</label>
+			<input type="date" class="input w-100 mb-8" />
+			<div class="mt-24 bg__neutral-grey-4">
+				<div class="px-12 py-12 d-flex gap-8">
+					<button
+						type="button"
+						data-bs-dismiss="modal"
+						class="w-50 fs-14 fw-bold btn btn__border--brand-blue btn__text--brand-blue"
+						style="border-radius: 6px; border-width: 2px"
+					>
+						Quay lại
+					</button>
+					<button
+						type="button"
+						class="w-50 border-0 fs-14 btn fw-bold btn__text--white-color bg__brand-blue"
+						style="border-radius: 6px"
+					>
+						Báo cáo
+					</button>
+				</div>
+			</div>
+		</form>
+	</body>
+	<script src="/scripts/baocaotonkhochitiet.js"></script>
+</html>

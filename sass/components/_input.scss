@@ -5,9 +5,12 @@
 	border-radius: 6px;
 	padding: 1.2rem;
 	font-size: 1.6rem;
-	&[type="text"] {
+	&__bg--neutral-white-light {
 		background-color: $neutral-white-light;
 	}
+	// &[type="text"] {
+	// 	background-color: $neutral-white-light;
+	// }
 }
 .label__input {
 	font-size: 1.4rem;
