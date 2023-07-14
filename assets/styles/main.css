@@ -332,7 +332,10 @@
   right: 12px;
 }
 .input__bg--neutral-white-light[type=text] {
-  background-color: #f9f9f9;
+  background-color: #e5e5e5;
+}
+.input__bg--neutral-white-light[type=text]:forcus {
+  background-color: white;
 }
 
 .label__input {

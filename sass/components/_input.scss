@@ -37,11 +37,11 @@
 			right: 12px;
 		}
 		&[type="text"] {
-			background-color: $neutral-white-light;
+			background-color: $neutral-grey-3;
+			&:forcus {
+				background-color: white;
+			}
 		}
-		// &[type="text"] {
-		// 	background-color: $neutral-white-light;
-		// }
 	}
 }
 .label__input {

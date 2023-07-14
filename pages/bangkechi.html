@@ -438,24 +438,21 @@
 							<div class="px-16">
 								<label class="label__input mt-8">Trạng thái</label>
 								<select class="form-select options mb-8">
-									<option selected>Tất cả</option>
-									<option value="1">One</option>
-									<option value="2">Two</option>
-									<option value="3">Three</option>
+									<option value="0" selected>Tất cả</option>
+									<option value="1">Các đơn hàng chưa trả tiền</option>
+									<option value="2">Các đơn hàng đã trả tiền</option>
 								</select>
 								<label class="label__input mt-8">Trạng thái HĐĐT</label>
 								<select class="form-select options mb-8">
-									<option selected>Tất cả</option>
-									<option value="1">One</option>
-									<option value="2">Two</option>
-									<option value="3">Three</option>
+									<option value="0" selected>Tất cả</option>
+									<option value="1">Các đơn hàng chưa xuất HĐĐT</option>
+									<option value="2">Các đơn hàng đã xuất HĐĐT</option>
 								</select>
 								<label class="label__input mt-8">Loại tiền tệ</label>
 								<select class="form-select options mb-8">
-									<option selected>Tất cả tiền tệ</option>
-									<option value="1">One</option>
-									<option value="2">Two</option>
-									<option value="3">Three</option>
+									<option value="0" selected>Tất cả tiền tệ</option>
+									<option value="1">VND</option>
+									<option value="2">USD</option>
 								</select>
 								<label class="label__input mt-8">Tình trạng báo cáo 777</label>
 								<select class="form-select options mb-8">
@@ -479,7 +476,7 @@
 								>
 									<div
 										id="advanced__search--btn"
-										class="btn__collapsed cursor-pointer d-flex"
+										class="btn__collapsed collapsed cursor-pointer d-flex"
 										type="button"
 										data-bs-toggle="collapse"
 										data-bs-target="#advancedSearch"
@@ -520,17 +517,16 @@
 									<div id="advancedSearch" class="collapse">
 										<label class="label__input mt-8">VAT</label>
 										<select class="form-select options mb-8">
-											<option selected>Tất cả</option>
-											<option value="1">One</option>
-											<option value="2">Two</option>
-											<option value="3">Three</option>
+											<option value="0" selected>Tất cả</option>
+											<option value="1">Chưa có VAT</option>
+											<option value="2">Có VAT</option>
 										</select>
 										<label class="label__input mt-8">Nhà cung cấp</label>
 										<select class="form-select options mb-8">
 											<option selected>Tất cả</option>
-											<option value="1">One</option>
-											<option value="2">Two</option>
-											<option value="3">Three</option>
+											<option value="1">Nhà cung cấp 1</option>
+											<option value="2">Nhà cung cấp 2</option>
+											<option value="3">Nhà cung cấp 3</option>
 										</select>
 										<label class="label__input mt-8">Nhân viên</label>
 										<select class="form-select options mb-8">
@@ -559,17 +555,14 @@
 										</div>
 										<label class="label__input mt-8">Loại thanh toán</label>
 										<select class="form-select options mb-8">
-											<option selected>Các loại thanh toán</option>
-											<option value="1">One</option>
-											<option value="2">Two</option>
-											<option value="3">Three</option>
+											<option value="0" selected>Các loại thanh toán</option>
+											<option value="1">Chuyển khoản</option>
+											<option value="2">Tiền mặt</option>
 										</select>
 										<label class="label__input mt-8">Loại đơn hàng</label>
 										<select class="form-select options mb-8">
-											<option selected>Đơn hàng thường</option>
-											<option value="1">One</option>
-											<option value="2">Two</option>
-											<option value="3">Three</option>
+											<option value="0" selected>Đơn hàng thường</option>
+											<option value="1">Đơn hàng đặc biệt</option>
 										</select>
 										<div class="gap-12 d-flex mt-8 mb-8">
 											<div class="w-100" style="max-width: calc(50% - 6px)">
