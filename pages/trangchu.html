@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Phieu thu</title>
+		<title>Tra chu</title>
 		<link rel="stylesheet" href="../bootstrap-5.0.2-dist/bootstrap.min.css" />
 		<link rel="stylesheet" href="../assets/styles/main.css" />
 		<script src="../bootstrap-5.0.2-dist/bootstrap.bundle.min.js"></script>
@@ -103,7 +103,7 @@
 						fill="#808080"
 					/>
 				</svg>
-				<span class="title__text">Đơn thu</span>
+				<span class="title__text">Bảng kê chi tiền</span>
 			</div>
 			<div class="search-bar bg-white">
 				<div class="search-bar__input search-bar__input--receipts">
@@ -145,7 +145,7 @@
 					Lọc theo
 				</button>
 			</div>
-			<div class="receipts">
+			<div class="expense__statement">
 				<div class="list-header">
 					<label for="check-all" class="checkbox__custom mr-12 box__select"
 						><svg
@@ -163,7 +163,7 @@
 					</label>
 					<input type="checkbox" id="check-all" hidden />
 					<div class="list-header__title w-100">
-						<span>Đơn thu</span>
+						<span>Đơn chi</span>
 						<span class="text-nowrap">Đã t.toán</span>
 						<span>HĐĐT</span>
 					</div>
@@ -191,7 +191,7 @@
 									<p class="item__time">20/05/2023 10:34:45</p>
 									<p class="item__name">Đơn #634: Amoxicillin 500</p>
 									<p class="item__customer">Khách: Triệu Việt Vương</p>
-									<p class="item__price text__success-600">34.000</p>
+									<p class="item__price text__error-500">34.000</p>
 								</div>
 								<span class="item__check">
 									<svg
@@ -246,7 +246,7 @@
 									<p class="item__time">20/05/2023 10:34:45</p>
 									<p class="item__name">Đơn #634: Amoxicillin 500</p>
 									<p class="item__customer">Khách: Triệu Việt Vương</p>
-									<p class="item__price text__success-600">34.000</p>
+									<p class="item__price text__error-500">34.000</p>
 								</div>
 								<span class="item__check">
 									<svg
@@ -301,7 +301,7 @@
 									<p class="item__time">20/05/2023 10:34:45</p>
 									<p class="item__name">Đơn #634: Amoxicillin 500</p>
 									<p class="item__customer">Khách: Triệu Việt Vương</p>
-									<p class="item__price text__success-600">34.000</p>
+									<p class="item__price text__error-500">34.000</p>
 								</div>
 								<span class="item__check">
 									<svg
@@ -355,27 +355,15 @@
 					</li>
 				</ul>
 			</nav>
-			<div class="mt-18 px-16 py-12 bg-white">
-				<button
-					class="btn btn__select-receipts text-nowrap bg-white w-100 fw-bold btn__border--brand-blue btn__text--brand-blue"
+			<div class="mt-18">
+				<div
+					class="bg-white fs-14 fw-bold line-height-224 pb-8 pt-8 px-16 justify-content-between box__select"
 				>
-					<svg
-						width="24"
-						height="25"
-						viewBox="0 0 24 25"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path
-							d="M4 7.87012H15V9.87012H4V7.87012ZM4 11.8701H15V13.8701H4V11.8701ZM4 15.8701H11V17.8701H4V15.8701ZM19.299 13.1621L14.999 17.4531L13.707 16.1621L12.293 17.5771L14.999 20.2811L20.711 14.5781L19.299 13.1621Z"
-							fill="#3279B7"
-						/>
-					</svg>
-					Chọn nhiều đơn
-				</button>
-				<div class="gap-8 box__select">
+					<span>Đã chọn</span><span class="text__error-500">126.000</span>
+				</div>
+				<div class="px-16 py-12 bg-white" style="border-top: 1px solid #f2f2f2">
 					<button
-						class="btn btn__no-select-receipts text-nowrap bg-white w-100 fw-bold btn__border--brand-blue btn__text--brand-blue"
+						class="btn btn__select__expense-statement text-nowrap bg-white w-100 fw-bold btn__border--brand-blue btn__text--brand-blue"
 					>
 						<svg
 							width="24"
@@ -389,13 +377,33 @@
 								fill="#3279B7"
 							/>
 						</svg>
-						Bỏ chọn
+						Chọn nhiều đơn
 					</button>
-					<button
-						class="btn text-nowrap bg__neutral-grey-2 w-100 fw-bold btn__border--neutral-grey-2 btn__text--white-color"
-					>
-						In đơn đã chọn
-					</button>
+
+					<div class="gap-8 box__select">
+						<button
+							class="btn btn__no-select__expense-statement text-nowrap bg-white w-100 fw-bold btn__border--brand-blue btn__text--brand-blue"
+						>
+							<svg
+								width="24"
+								height="25"
+								viewBox="0 0 24 25"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M4 7.87012H15V9.87012H4V7.87012ZM4 11.8701H15V13.8701H4V11.8701ZM4 15.8701H11V17.8701H4V15.8701ZM19.299 13.1621L14.999 17.4531L13.707 16.1621L12.293 17.5771L14.999 20.2811L20.711 14.5781L19.299 13.1621Z"
+									fill="#3279B7"
+								/>
+							</svg>
+							Bỏ chọn
+						</button>
+						<button
+							class="btn text-nowrap bg__neutral-grey-2 w-100 fw-bold btn__border--neutral-grey-2 btn__text--white-color"
+						>
+							In đơn đã chọn
+						</button>
+					</div>
 				</div>
 			</div>
 			<!-- Modal -->
@@ -471,7 +479,7 @@
 								>
 									<div
 										id="advanced__search--btn"
-										class="btn__collapsed collapsed cursor-pointer d-flex"
+										class="btn__collapsed cursor-pointer d-flex"
 										type="button"
 										data-bs-toggle="collapse"
 										data-bs-target="#advancedSearch"
@@ -517,7 +525,7 @@
 											<option value="2">Two</option>
 											<option value="3">Three</option>
 										</select>
-										<label class="label__input mt-8">Khách hàng</label>
+										<label class="label__input mt-8">Nhà cung cấp</label>
 										<select class="form-select options mb-8">
 											<option selected>Tất cả</option>
 											<option value="1">One</option>
@@ -602,8 +610,8 @@
 									</div>
 								</div>
 							</div>
-							<div class="py-12 bg__neutral-grey-4 mt-24">
-								<div class="gap-8 d-flex px-12">
+							<div class="bg__neutral-grey-4 mt-24">
+								<div class="gap-8 d-flex px-12 py-12">
 									<button
 										type="button"
 										data-bs-dismiss="modal"
@@ -715,5 +723,4 @@
 			</ul>
 		</div>
 	</body>
-	<script src="/scripts/phieuthu.js"></script>
 </html>

@@ -2,6 +2,7 @@
 	@include flex(row, space-between, center);
 	background: $brand-yellow;
 	padding: 1rem 1.8rem;
+	max-width: 576px;
 	width: 100%;
 	position: fixed;
 	top: 0;
