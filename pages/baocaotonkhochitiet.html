@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Phieu thu</title>
+		<title>Bao cao ton kho chi tiet</title>
 		<link rel="stylesheet" href="../bootstrap-5.0.2-dist/bootstrap.min.css" />
 		<link rel="stylesheet" href="../assets/styles/main.css" />
 		<script src="../bootstrap-5.0.2-dist/bootstrap.bundle.min.js"></script>
@@ -92,60 +92,21 @@
 		<main class="bg__neutral-grey-4 mb-80 mt-60">
 			<div class="title">
 				<svg
-					width="18"
-					height="21"
-					viewBox="0 0 18 21"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
 				>
 					<path
-						d="M17 20.8701H1C0.734784 20.8701 0.48043 20.7648 0.292893 20.5772C0.105357 20.3897 0 20.1353 0 19.8701V1.87012C0 1.6049 0.105357 1.35055 0.292893 1.16301C0.48043 0.975474 0.734784 0.870117 1 0.870117H17C17.2652 0.870117 17.5196 0.975474 17.7071 1.16301C17.8946 1.35055 18 1.6049 18 1.87012V19.8701C18 20.1353 17.8946 20.3897 17.7071 20.5772C17.5196 20.7648 17.2652 20.8701 17 20.8701ZM16 18.8701V2.87012H2V18.8701H16ZM5 7.87012H13V9.87012H5V7.87012ZM5 11.8701H13V13.8701H5V11.8701Z"
+						d="M9 6H11V20H9V6ZM13 8H15V20H13V8ZM17 4H19V20H17V4ZM5 12H7V20H5V12Z"
 						fill="#808080"
 					/>
 				</svg>
-				<span class="title__text">Đơn thu</span>
+				<span class="title__text">Báo cáo tồn kho chi tiết</span>
 			</div>
-			<div class="search-bar bg-white">
-				<div class="search-bar__input search-bar__input--receipts">
-					<svg
-						width="24"
-						height="18"
-						viewBox="0 0 19 20"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path
-							d="M8 16.8701C9.77498 16.8698 11.4988 16.2755 12.897 15.1821L17.293 19.5781L18.707 18.1641L14.311 13.7681C15.405 12.3698 15.9996 10.6456 16 8.87012C16 4.45912 12.411 0.870117 8 0.870117C3.589 0.870117 0 4.45912 0 8.87012C0 13.2811 3.589 16.8701 8 16.8701ZM8 2.87012C11.309 2.87012 14 5.56112 14 8.87012C14 12.1791 11.309 14.8701 8 14.8701C4.691 14.8701 2 12.1791 2 8.87012C2 5.56112 4.691 2.87012 8 2.87012Z"
-							fill="#808080"
-						/>
-					</svg>
-					<input
-						type="text"
-						class="input border-0 w-100"
-						placeholder="Tìm theo từ khóa"
-					/>
-				</div>
-				<button
-					class="text-nowrap bg-white btn fw-bold btn__border--brand-blue btn__text--brand-blue"
-					data-bs-toggle="modal"
-					data-bs-target="#FiltersAndSearch"
-				>
-					<svg
-						width="24"
-						height="25"
-						viewBox="0 0 24 25"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path
-							d="M7 11.8701H17V13.8701H7V11.8701ZM4 7.87012H20V9.87012H4V7.87012ZM10 15.8701H14V17.8701H10V15.8701Z"
-							fill="#3279B7"
-						/>
-					</svg>
-					Lọc theo
-				</button>
-			</div>
-			<div class="receipts">
+			<!-- List Inventory Reports -->
+			<div class="inventory__reports">
 				<div class="list-header">
 					<label for="check-all" class="checkbox__custom mr-12 box__select"
 						><svg
@@ -163,9 +124,9 @@
 					</label>
 					<input type="checkbox" id="check-all" hidden />
 					<div class="list-header__title w-100">
-						<span>Đơn thu</span>
-						<span class="text-nowrap">Đã t.toán</span>
-						<span>HĐĐT</span>
+						<span>Sản phẩm</span>
+						<span class="text-nowrap">Số lô / HSD</span>
+						<span>SL</span>
 					</div>
 				</div>
 				<ul class="list-item list-unstyled bg-white">
@@ -188,45 +149,34 @@
 							<input type="checkbox" id="item-1" hidden />
 							<div class="item__content w-100">
 								<div>
-									<p class="item__time">20/05/2023 10:34:45</p>
-									<p class="item__name">Đơn #634: Amoxicillin 500</p>
-									<p class="item__customer">Khách: Triệu Việt Vương</p>
-									<p class="item__price text__success-600">34.000</p>
+									<p class="item__name">Panadol cảm cúm</p>
+									<p class="item__price text__neutral-grey-1">DQG0000875</p>
+									<p
+										class="item__price text__success-600 fs-12 line-height-192 fw-bold"
+									>
+										25.000
+									</p>
 								</div>
-								<span class="item__check">
-									<svg
-										width="24"
-										height="25"
-										viewBox="0 0 24 25"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M9.99999 15.5421L19.192 6.34912L20.607 7.76312L9.99999 18.3701L3.63599 12.0061L5.04999 10.5921L9.99999 15.5421Z"
-											fill="#E5E5E5"
-										/>
-									</svg>
+								<span
+									class="d-flex flex-column justify-content-center align-items-start"
+								>
+									<p class="fs-14 line-height-224">111</p>
+									<p class="fs-12 line-height-192 text__neutral-grey-1">
+										12/03/2024
+									</p>
 								</span>
-								<span class="item__check">
-									<svg
-										width="24"
-										height="25"
-										viewBox="0 0 24 25"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M9.99999 15.5421L19.192 6.34912L20.607 7.76312L9.99999 18.3701L3.63599 12.0061L5.04999 10.5921L9.99999 15.5421Z"
-											fill="#3279B7"
-										/>
-									</svg>
+								<span
+									class="d-flex flex-column justify-content-center align-items-end"
+								>
+									<p class="fs-14 line-height-224">45</p>
+									<p class="fs-12 line-height-192 text__neutral-grey-1">Viên</p>
 								</span>
 							</div>
 						</div>
 					</li>
 					<li class="item__wrapper">
 						<div class="item px-16 py-12">
-							<label for="item-2" class="checkbox__custom mr-12 box__select">
+							<label for="item-1" class="checkbox__custom mr-12 box__select">
 								<svg
 									width="100%"
 									height="100%"
@@ -240,48 +190,37 @@
 									/>
 								</svg>
 							</label>
-							<input type="checkbox" id="item-2" hidden />
+							<input type="checkbox" id="item-1" hidden />
 							<div class="item__content w-100">
 								<div>
-									<p class="item__time">20/05/2023 10:34:45</p>
-									<p class="item__name">Đơn #634: Amoxicillin 500</p>
-									<p class="item__customer">Khách: Triệu Việt Vương</p>
-									<p class="item__price text__success-600">34.000</p>
+									<p class="item__name">Panadol cảm cúm</p>
+									<p class="item__price text__neutral-grey-1">DQG0000875</p>
+									<p
+										class="item__price text__success-600 fs-12 line-height-192 fw-bold"
+									>
+										25.000
+									</p>
 								</div>
-								<span class="item__check">
-									<svg
-										width="24"
-										height="25"
-										viewBox="0 0 24 25"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M9.99999 15.5421L19.192 6.34912L20.607 7.76312L9.99999 18.3701L3.63599 12.0061L5.04999 10.5921L9.99999 15.5421Z"
-											fill="#3279B7"
-										/>
-									</svg>
+								<span
+									class="d-flex flex-column justify-content-center align-items-start"
+								>
+									<p class="fs-14 line-height-224">111</p>
+									<p class="fs-12 line-height-192 text__neutral-grey-1">
+										12/03/2024
+									</p>
 								</span>
-								<span class="item__check">
-									<svg
-										width="24"
-										height="25"
-										viewBox="0 0 24 25"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M9.99999 15.5421L19.192 6.34912L20.607 7.76312L9.99999 18.3701L3.63599 12.0061L5.04999 10.5921L9.99999 15.5421Z"
-											fill="#3279B7"
-										/>
-									</svg>
+								<span
+									class="d-flex flex-column justify-content-center align-items-end"
+								>
+									<p class="fs-14 line-height-224">45</p>
+									<p class="fs-12 line-height-192 text__neutral-grey-1">Viên</p>
 								</span>
 							</div>
 						</div>
 					</li>
 					<li class="item__wrapper">
 						<div class="item px-16 py-12">
-							<label for="item-3" class="checkbox__custom mr-12 box__select">
+							<label for="item-1" class="checkbox__custom mr-12 box__select">
 								<svg
 									width="100%"
 									height="100%"
@@ -295,47 +234,37 @@
 									/>
 								</svg>
 							</label>
-							<input type="checkbox" id="item-3" hidden />
+							<input type="checkbox" id="item-1" hidden />
 							<div class="item__content w-100">
 								<div>
-									<p class="item__time">20/05/2023 10:34:45</p>
-									<p class="item__name">Đơn #634: Amoxicillin 500</p>
-									<p class="item__customer">Khách: Triệu Việt Vương</p>
-									<p class="item__price text__success-600">34.000</p>
+									<p class="item__name">Panadol cảm cúm</p>
+									<p class="item__price text__neutral-grey-1">DQG0000875</p>
+									<p
+										class="item__price text__success-600 fs-12 line-height-192 fw-bold"
+									>
+										25.000
+									</p>
 								</div>
-								<span class="item__check">
-									<svg
-										width="24"
-										height="25"
-										viewBox="0 0 24 25"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M9.99999 15.5421L19.192 6.34912L20.607 7.76312L9.99999 18.3701L3.63599 12.0061L5.04999 10.5921L9.99999 15.5421Z"
-											fill="#3279B7"
-										/>
-									</svg>
+								<span
+									class="d-flex flex-column justify-content-center align-items-start"
+								>
+									<p class="fs-14 line-height-224">111</p>
+									<p class="fs-12 line-height-192 text__neutral-grey-1">
+										12/03/2024
+									</p>
 								</span>
-								<span class="item__check">
-									<svg
-										width="24"
-										height="25"
-										viewBox="0 0 24 25"
-										fill="none"
-										xmlns="http://www.w3.org/2000/svg"
-									>
-										<path
-											d="M9.99999 15.5421L19.192 6.34912L20.607 7.76312L9.99999 18.3701L3.63599 12.0061L5.04999 10.5921L9.99999 15.5421Z"
-											fill="#E5E5E5"
-										/>
-									</svg>
+								<span
+									class="d-flex flex-column justify-content-center align-items-end"
+								>
+									<p class="fs-14 line-height-224">45</p>
+									<p class="fs-12 line-height-192 text__neutral-grey-1">Viên</p>
 								</span>
 							</div>
 						</div>
 					</li>
 				</ul>
 			</div>
+			<!-- Pagination -->
 			<nav aria-label="Page navigation example">
 				<ul class="pagination bg-white">
 					<li class="page-item">
@@ -355,9 +284,10 @@
 					</li>
 				</ul>
 			</nav>
+			<!-- Button -->
 			<div class="mt-18 px-16 py-12 bg-white">
 				<button
-					class="btn btn__select-receipts text-nowrap bg-white w-100 fw-bold btn__border--brand-blue btn__text--brand-blue"
+					class="btn__select-inventory-reports btn btn__select-receipts text-nowrap bg-white w-100 fw-bold btn__border--brand-blue btn__text--brand-blue"
 				>
 					<svg
 						width="24"
@@ -371,11 +301,12 @@
 							fill="#3279B7"
 						/>
 					</svg>
-					Chọn nhiều đơn
+					Chọn nhiều SP
 				</button>
 				<div class="gap-8 box__select">
 					<button
-						class="btn btn__no-select-receipts text-nowrap bg-white w-100 fw-bold btn__border--brand-blue btn__text--brand-blue"
+						type="button"
+						class="btn__no-select-inventory-reports btn btn__no-select-receipts text-nowrap bg-white w-100 fw-bold btn__border--brand-blue btn__text--brand-blue"
 					>
 						<svg
 							width="24"
@@ -392,227 +323,218 @@
 						Bỏ chọn
 					</button>
 					<button
-						class="btn text-nowrap bg__neutral-grey-2 w-100 fw-bold btn__border--neutral-grey-2 btn__text--white-color"
+						data-bs-toggle="modal"
+						data-bs-target="#BatchSuspension"
+						class="btn text-nowrap w-100 fw-bold btn__border--brand-blue bg__brand-blue btn__text--white-color"
 					>
-						In đơn đã chọn
+						Đình chỉ
 					</button>
+					<svg
+						class="cursor-pointer"
+						style="flex-shrink: 0"
+						width="50"
+						height="100%"
+						viewBox="0 0 48 48"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						data-bs-toggle="modal"
+						data-bs-target="#MenuItem"
+					>
+						<rect width="48" height="48" rx="6" fill="#3279B7" />
+						<path
+							d="M24 23C23.175 23 22.5 23.675 22.5 24.5C22.5 25.325 23.175 26 24 26C24.825 26 25.5 25.325 25.5 24.5C25.5 23.675 24.825 23 24 23ZM29.5 23C28.675 23 28 23.675 28 24.5C28 25.325 28.675 26 29.5 26C30.325 26 31 25.325 31 24.5C31 23.675 30.325 23 29.5 23ZM18.5 23C17.675 23 17 23.675 17 24.5C17 25.325 17.675 26 18.5 26C19.325 26 20 25.325 20 24.5C20 23.675 19.325 23 18.5 23Z"
+							fill="white"
+						/>
+					</svg>
 				</div>
 			</div>
-			<!-- Modal -->
+			<!-- Modal Update Batch Suspension -->
 			<div
 				class="modal fade"
-				id="FiltersAndSearch"
+				id="BatchSuspension"
 				tabindex="-1"
-				aria-labelledby="FiltersAndSearch"
+				aria-labelledby="BatchSuspension"
 				aria-hidden="true"
 			>
-				<div class="modal-dialog">
-					<div class="modal-content pt-12">
-						<div class="text-end px-12">
-							<svg
-								data-bs-dismiss="modal"
-								width="24"
-								height="25"
-								viewBox="0 0 24 25"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									d="M12 11.4561L16.95 6.5061L18.364 7.9201L13.414 12.8701L18.364 17.8201L16.95 19.2341L12 14.2841L7.04999 19.2341L5.63599 17.8201L10.586 12.8701L5.63599 7.9201L7.04999 6.5061L12 11.4561Z"
-									fill="#B2B2B2"
-								/>
-							</svg>
-						</div>
-						<h3 class="fw-bold text-center fs-20 text__brand-accent mb-32">
-							Bộ lọc & Tìm kiếm
-						</h3>
-						<form>
-							<div class="px-16">
-								<label class="label__input mt-8">Trạng thái</label>
-								<select class="form-select options mb-8">
-									<option selected>Tất cả</option>
-									<option value="1">Các đơn hàng chưa trả tiền</option>
-									<option value="2">Các đơn hàng đã trả tiền</option>
-								</select>
-								<label class="label__input mt-8">Trạng thái HĐĐT</label>
-								<select class="form-select options mb-8">
-									<option selected>Tất cả</option>
-									<option value="1">Các đơn hàng chưa xuất HĐĐT</option>
-									<option value="2">Các đơn hàng đã xuất HĐĐT</option>
-								</select>
-								<label class="label__input mt-8">Loại tiền tệ</label>
-								<select class="form-select options mb-8">
-									<option selected>Tất cả tiền tệ</option>
-									<option value="1">VND</option>
-									<option value="2">USD</option>
-								</select>
-								<label class="label__input mt-8">Tình trạng báo cáo 777</label>
-								<select class="form-select options mb-8">
-									<option selected>Tất cả</option>
-									<option value="1">One</option>
-									<option value="2">Two</option>
-									<option value="3">Three</option>
-								</select>
-								<div class="gap-12 d-flex mt-8 mb-8">
-									<div class="w-100" style="max-width: calc(50% - 6px)">
-										<label class="label__input">Từ ngày</label>
-										<input type="date" class="w-100 input" />
-									</div>
-									<div class="w-100" style="max-width: calc(50% - 6px)">
-										<label class="label__input">Đến ngày</label>
-										<input type="date" class="w-100 input" />
-									</div>
-								</div>
-								<div
-									class="fw-bold text-center fs-16 text__brand-blue d-flex justify-content-center align-items-center py-10"
+				<div
+					class="modal-dialog top-50 translate-middle-y overflow-hidden"
+					style="border-radius: 1.6rem"
+				>
+					<form class="modal-content">
+						<div class="px-16">
+							<div class="text-end">
+								<svg
+									class="mt-16 cursor-pointer"
+									type="button "
+									data-bs-dismiss="modal"
+									width="24"
+									height="25"
+									viewBox="0 0 24 25"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
 								>
-									<div
-										id="advanced__search--btn"
-										class="btn__collapsed collapsed cursor-pointer d-flex"
-										type="button"
-										data-bs-toggle="collapse"
-										data-bs-target="#advancedSearch"
-										aria-expanded="false"
-										aria-controls="collapseOne"
-									>
-										<svg
-											width="24"
-											height="24"
-											viewBox="0 0 24 25"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<path
-												d="M10 18.8701C11.775 18.8698 13.4988 18.2755 14.897 17.1821L19.293 21.5781L20.707 20.1641L16.311 15.7681C17.405 14.3698 17.9996 12.6456 18 10.8701C18 6.45912 14.411 2.87012 10 2.87012C5.589 2.87012 2 6.45912 2 10.8701C2 15.2811 5.589 18.8701 10 18.8701ZM10 4.87012C13.309 4.87012 16 7.56112 16 10.8701C16 14.1791 13.309 16.8701 10 16.8701C6.691 16.8701 4 14.1791 4 10.8701C4 7.56112 6.691 4.87012 10 4.87012Z"
-												fill="#3279B7"
-											/>
-										</svg>
+									<path
+										d="M12 11.4561L16.95 6.5061L18.364 7.9201L13.414 12.8701L18.364 17.8201L16.95 19.2341L12 14.2841L7.04999 19.2341L5.63599 17.8201L10.586 12.8701L5.63599 7.9201L7.04999 6.5061L12 11.4561Z"
+										fill="#B2B2B2"
+									/>
+								</svg>
+							</div>
+							<p
+								class="fw-bold fs-20 text__brand-accent text-center"
+								style="line-height: 2.6rem"
+							>
+								Đình chỉ lưu hành lô<br />
+								thuốc này
+							</p>
+							<label class="label__input mt-8">Số ban hành</label>
+							<input type="text" class="input w-100 mb-8" />
+							<label class="label__input mt-8">Ngày tháng ban hành</label>
+							<input
+								type="date"
+								class="input w-100 mb-8 date-format"
+								id="myDate"
+							/>
+							<label class="label__input mt-8">Cơ quan ban hành</label>
+							<input type="text" class="input w-100 mb-8" />
+							<label class="label__input mt-8">Thu hồi từ khách hàng</label>
+							<input type="text" class="input w-100 mb-8" />
+							<label class="label__input mt-8">Xử lý của nhà thuốc</label>
+							<input type="text" class="input w-100 mb-8" />
+						</div>
 
-										Tìm kiếm nâng cao
-										<svg
-											class="chevrons-down"
-											width="24"
-											height="24"
-											viewBox="0 0 24 25"
-											fill="none"
-											xmlns="http://www.w3.org/2000/svg"
-										>
-											<path
-												d="M16.293 10.1631L12 14.4561L7.70703 10.1631L6.29303 11.5771L12 17.2841L17.707 11.5771L16.293 10.1631Z"
-												fill="#3279B7"
-											/>
-										</svg>
-									</div>
-								</div>
-								<!-- Accordion  -->
-								<div>
-									<div id="advancedSearch" class="collapse">
-										<label class="label__input mt-8">VAT</label>
-										<select class="form-select options mb-8">
-											<option value="0" selected>Tất cả</option>
-											<option value="1">Có VAT</option>
-											<option value="2">Không có VAT</option>
-										</select>
-										<label class="label__input mt-8">Khách hàng</label>
-										<select class="form-select options mb-8">
-											<option value="0" selected>Tất cả</option>
-											<option value="1">An Dương Vương</option>
-											<option value="2">Âu Cơ</option>
-											<option value="3">Bà Triệu</option>
-										</select>
-										<label class="label__input mt-8">Nhân viên</label>
-										<select class="form-select options mb-8">
-											<option value="0" selected>Chọn nhân viên</option>
-											<option value="1">Vũ Minh Anh</option>
-											<option value="2">Đặng Khắc Toàn</option>
-										</select>
-										<div class="gap-12 d-flex mt-8 mb-8">
-											<div class="w-100" style="max-width: calc(50% - 6px)">
-												<label class="label__input">Số tiền từ</label>
-												<input
-													type="number"
-													class="w-100 input"
-													placeholder="Nhập số"
-												/>
-											</div>
-											<div class="w-100" style="max-width: calc(50% - 6px)">
-												<label class="label__input">Số tiền đến</label>
-												<input
-													type="number"
-													class="w-100 input"
-													placeholder="Nhập số"
-												/>
-											</div>
-										</div>
-										<label class="label__input mt-8">Loại thanh toán</label>
-										<select class="form-select options mb-8">
-											<option value="0" selected>Các loại thanh toán</option>
-											<option value="1">Thanh toán tiền mặt</option>
-											<option value="2">Thanh toán thẻ</option>
-										</select>
-										<label class="label__input mt-8">Loại đơn hàng</label>
-										<select class="form-select options mb-8">
-											<option value="0" selected>Đơn hàng thường</option>
-											<option value="1">Đơn hàng gộp</option>
-										</select>
-										<div class="gap-12 d-flex mt-8 mb-8">
-											<div class="w-100" style="max-width: calc(50% - 6px)">
-												<label class="label__input">Ngày checkin từ</label>
-												<input
-													type="date"
-													class="w-100 input"
-													placeholder="Chọn ngày"
-												/>
-											</div>
-											<div class="w-100" style="max-width: calc(50% - 6px)">
-												<label class="label__input">Ngày checkin đến</label>
-												<input
-													type="date"
-													class="w-100 input"
-													placeholder="Chọn ngày"
-												/>
-											</div>
-										</div>
-										<div class="gap-12 d-flex mt-8 mb-8">
-											<div class="w-100" style="max-width: calc(50% - 6px)">
-												<label class="label__input">Ngày checkout từ</label>
-												<input
-													type="date"
-													class="w-100 input"
-													placeholder="Chọn ngày"
-												/>
-											</div>
-											<div class="w-100" style="max-width: calc(50% - 6px)">
-												<label class="label__input">Ngày checkout đến</label>
-												<input
-													type="date"
-													class="input w-100"
-													placeholder="Chọn ngày"
-												/>
-											</div>
-										</div>
-									</div>
-								</div>
+						<div class="mt-24 bg__neutral-grey-4">
+							<div class="px-12 py-12 d-flex gap-8">
+								<button
+									type="button"
+									data-bs-dismiss="modal"
+									class="w-50 fs-14 fw-bold btn btn__border--brand-blue btn__text--brand-blue"
+									style="border-radius: 6px; border-width: 2px"
+								>
+									Đóng
+								</button>
+								<button
+									type="button"
+									class="w-50 border-0 fs-14 btn fw-bold btn__text--white-color bg__brand-blue"
+									style="border-radius: 6px"
+								>
+									Cập nhập
+								</button>
 							</div>
-							<div class="py-12 bg__neutral-grey-4 mt-24">
-								<div class="gap-8 d-flex px-12">
-									<button
-										type="button"
-										data-bs-dismiss="modal"
-										class="hover__color text-nowrap w-100 bg-white btn fw-bold btn__border--brand-blue btn__text--brand-blue"
-									>
-										Quay lại
-									</button>
-									<button
-										type="button"
-										class="text-nowrap w-100 bg__brand-blue btn fw-bold btn__border--brand-blue btn__text--white-color"
-									>
-										Tìm kiếm
-									</button>
-								</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- Menu Item -->
+			<div
+				class="modal fade"
+				id="MenuItem"
+				tabindex="-1"
+				aria-labelledby="MenuItem"
+				aria-hidden="true"
+			>
+				<div
+					class="modal-dialog top-50 translate-middle-y overflow-hidden"
+					style="border-radius: 0.6rem"
+				>
+					<ul
+						class="menu__item list-unstyled bg-white fs-14 line-height-224 modal-content"
+					>
+						<li
+							type="button"
+							class="px-12 py-12"
+							data-bs-toggle="modal"
+							data-bs-target="#ADRTracking"
+						>
+							ADR
+						</li>
+						<hr />
+						<li class="px-12 py-12">Ngừng kinh doanh</li>
+						<hr />
+						<li class="px-12 py-12">Xuất ra Excel</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Modal Update ADR Tracking -->
+			<div
+				class="modal fade"
+				id="ADRTracking"
+				tabindex="-1"
+				aria-labelledby="ADRTracking"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog overflow-hidden" style="border-radius: 1.6rem">
+					<form class="modal-content">
+						<div class="px-16">
+							<div class="text-end">
+								<svg
+									class="mt-16 cursor-pointer"
+									type="button "
+									data-bs-dismiss="modal"
+									width="24"
+									height="25"
+									viewBox="0 0 24 25"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M12 11.4561L16.95 6.5061L18.364 7.9201L13.414 12.8701L18.364 17.8201L16.95 19.2341L12 14.2841L7.04999 19.2341L5.63599 17.8201L10.586 12.8701L5.63599 7.9201L7.04999 6.5061L12 11.4561Z"
+										fill="#B2B2B2"
+									/>
+								</svg>
 							</div>
-						</form>
-					</div>
+							<p
+								class="fw-bold fs-20 text__brand-accent text-center"
+								style="line-height: 2.6rem"
+							>
+								Theo dõi ADR lô thuốc này
+							</p>
+							<label class="label__input mt-8">Ngày tháng nhận phản ánh</label>
+							<input
+								type="date"
+								class="input w-100 mb-8 date-format"
+								id="myDate"
+							/>
+							<label class="label__input mt-8">Họ tên bệnh nhân</label>
+							<input type="text" class="input w-100 mb-8" />
+							<label class="label__input mt-8">Địa chỉ bệnh nhân</label>
+							<input type="text" class="input w-100 mb-8" />
+							<label class="label__input mt-8"
+								>Số điện thoại của bệnh nhân</label
+							>
+							<input type="text" class="input w-100 mb-8" />
+							<label class="label__input mt-8">Thông tin khác</label>
+							<input type="text" class="input w-100 mb-8" />
+							<label class="label__input mt-8">Số lượng thuốc</label>
+							<input type="text" class="input w-100 mb-8" />
+							<label class="label__input mt-8"
+								>Hiện tượng ADR đã xảy ra, số lần xảy ra, thuốc nghi xảy ra
+								ADR</label
+							>
+							<input type="text" class="input w-100 mb-8" />
+							<label class="label__input mt-8">Cách giải quyết</label>
+							<input type="text" class="input w-100 mb-8" />
+						</div>
+
+						<div class="mt-24 bg__neutral-grey-4">
+							<div class="px-12 py-12 d-flex gap-8">
+								<button
+									type="button"
+									data-bs-dismiss="modal"
+									class="w-50 fs-14 fw-bold btn btn__border--brand-blue btn__text--brand-blue"
+									style="border-radius: 6px; border-width: 2px"
+								>
+									Đóng
+								</button>
+								<button
+									type="button"
+									class="w-50 border-0 fs-14 btn fw-bold btn__text--white-color bg__brand-blue"
+									style="border-radius: 6px"
+								>
+									Cập nhập
+								</button>
+							</div>
+						</div>
+					</form>
 				</div>
 			</div>
 		</main>
@@ -707,5 +629,5 @@
 			</ul>
 		</div>
 	</body>
-	<script src="/scripts/phieuthu.js"></script>
+	<script src="/scripts/baocaotonkhochitiet.js"></script>
 </html>

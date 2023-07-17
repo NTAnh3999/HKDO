@@ -3,12 +3,13 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Phieu thu</title>
+		<title>Bang Ke Chi Tiet</title>
 		<link rel="stylesheet" href="../bootstrap-5.0.2-dist/bootstrap.min.css" />
 		<link rel="stylesheet" href="../assets/styles/main.css" />
 		<script src="../bootstrap-5.0.2-dist/bootstrap.bundle.min.js"></script>
 	</head>
 	<body>
+		<!-- Top Navigation -->
 		<nav class="top-navigation">
 			<a href="/" class="top-navigation__link">
 				<img src="../assets/images/logo.png" alt="Logo" />
@@ -87,7 +88,432 @@
 				</li>
 			</ul>
 		</nav>
-		<main></main>
+		<!-- Page Content -->
+		<main class="bg__neutral-grey-4 mb-80 mt-60">
+			<!-- Title -->
+			<div class="title">
+				<svg
+					width="18"
+					height="21"
+					viewBox="0 0 18 21"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						d="M17 20.8701H1C0.734784 20.8701 0.48043 20.7648 0.292893 20.5772C0.105357 20.3897 0 20.1353 0 19.8701V1.87012C0 1.6049 0.105357 1.35055 0.292893 1.16301C0.48043 0.975474 0.734784 0.870117 1 0.870117H17C17.2652 0.870117 17.5196 0.975474 17.7071 1.16301C17.8946 1.35055 18 1.6049 18 1.87012V19.8701C18 20.1353 17.8946 20.3897 17.7071 20.5772C17.5196 20.7648 17.2652 20.8701 17 20.8701ZM16 18.8701V2.87012H2V18.8701H16ZM5 7.87012H13V9.87012H5V7.87012ZM5 11.8701H13V13.8701H5V11.8701Z"
+						fill="#808080"
+					/>
+				</svg>
+				<span class="title__text">Đơn chi #673</span>
+			</div>
+			<!-- Detail Statement -->
+			<div class="detail__receipt">
+				<form action="/" class="bg-white">
+					<!-- Order Statement -->
+					<div id="statement__information" class="px-16">
+						<label class="label__input mt-8">Tên đơn hàng</label>
+						<input
+							type="text"
+							class="input w-100 mb-8"
+							placeholder="Amoxiciliin 500"
+						/>
+						<label class="label__input mt-8">Số chứng từ</label>
+						<input
+							type="text"
+							class="input w-100 mb-8"
+							placeholder="Amoxiciliin 500"
+						/>
+						<label class="label__input mt-8">Khách hàng</label>
+						<input
+							type="text"
+							class="input w-100 mb-8"
+							placeholder="Amoxiciliin 500"
+						/>
+						<label class="label__input mt-8">Người sử dụng</label>
+						<input
+							type="text"
+							class="input w-100 mb-8"
+							placeholder="Amoxiciliin 500"
+						/>
+						<div class="gap-12 d-flex mt-8 mb-8">
+							<div class="w-100" style="max-width: calc(50% - 6px)">
+								<label class="label__input">Ngày</label>
+								<input type="date" class="input w-100" />
+							</div>
+							<div class="w-100" style="max-width: calc(50% - 6px)">
+								<label class="label__input">Thời gian</label>
+								<input
+									type="datetime"
+									class="input w-100"
+									placeholder="01:08:13"
+								/>
+							</div>
+						</div>
+						<div class="gap-12 d-flex mt-8 mb-8">
+							<div class="w-100" style="max-width: calc(50% - 6px)">
+								<label class="label__input">Thành tiền</label>
+								<input
+									type="number"
+									class="input w-100"
+									placeholder="314.000"
+								/>
+							</div>
+							<div class="w-100" style="max-width: calc(50% - 6px)">
+								<label class="label__input">Kiểu thanh toán</label>
+								<input type="text" class="input w-100" placeholder="Tiền mặt" />
+							</div>
+						</div>
+						<label class="label__input mt-8">Tính thuế VAT</label>
+						<select class="form-select options mb-8">
+							<option value="0" selected>Không tính thuế VAT</option>
+							<option value="1">Tính thuế VAT</option>
+						</select>
+						<label class="label__input mt-8">% VAT</label>
+						<select class="form-select options mb-8">
+							<option value="5%" selected>5%</option>
+							<option value="10">10%</option>
+						</select>
+						<div class="gap-12 d-flex mt-8 mb-8">
+							<div class="w-100" style="max-width: calc(50% - 6px)">
+								<label class="label__input">Trạng thái</label>
+								<input
+									type="text"
+									class="input w-100"
+									placeholder="Đã trả tiền"
+								/>
+							</div>
+							<div class="w-100" style="max-width: calc(50% - 6px)">
+								<label class="label__input">Trạng thái HĐĐT</label>
+								<input
+									type="text"
+									class="input w-100"
+									placeholder="Chưa xuất"
+								/>
+							</div>
+						</div>
+						<label class="label__input mt-8">Ghi chú</label>
+						<input type="text" class="input w-100 mb-8" />
+					</div>
+				</form>
+			</div>
+			<!-- List Item -->
+			<div class="list">
+				<div class="list-header">
+					<div
+						class="list-header__title w-100"
+						style="grid-template-columns: 5fr 1fr 1.8fr 0.5fr"
+					>
+						<span>Tên</span>
+						<span class="text-nowrap">SL</span>
+						<span>Thành tiền</span>
+					</div>
+				</div>
+				<ul class="list-item list-unstyled bg-white">
+					<li class="item__wrapper">
+						<div class="item px-16 py-12">
+							<div
+								class="item__content w-100"
+								style="grid-template-columns: 5fr 1fr 1.8fr 0.5fr"
+							>
+								<div>
+									<p class="item__customer">Panadol Extra</p>
+								</div>
+								<span class="item__check fs-14">1</span>
+								<span class="item__check fs-14 flex-column align-items-end">
+									<p class="line-height-224">24.000</p>
+									<p class="fw-bold text__brand-blue line-height-224">48.000</p>
+								</span>
+								<span
+									class="item__check fs-14 flex-column align-items-end justify-content-center"
+								>
+									<svg
+										data-bs-toggle="modal"
+										data-bs-target="#Update-1"
+										class="cursor-pointer"
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M10.6665 1.34131L12.6665 3.34131L11.1418 4.86664L9.14184 2.86664L10.6665 1.34131ZM2.6665 9.33331V11.3333H4.6665L10.1992 5.80864L8.19917 3.80864L2.6665 9.33331ZM2.6665 13.3333H13.3332V14.6666H2.6665V13.3333Z"
+											fill="#808080"
+										/>
+									</svg>
+								</span>
+							</div>
+						</div>
+					</li>
+					<li class="item__wrapper">
+						<div class="item px-16 py-12">
+							<div
+								class="item__content w-100"
+								style="grid-template-columns: 5fr 1fr 1.8fr 0.5fr"
+							>
+								<div>
+									<p class="item__customer">Panadol Extra</p>
+								</div>
+								<span class="item__check fs-14">1</span>
+								<span class="item__check fs-14 flex-column align-items-end">
+									<p class="line-height-224">24.000</p>
+									<p class="fw-bold text__brand-blue line-height-224">48.000</p>
+								</span>
+								<span
+									class="item__check fs-14 flex-column align-items-end justify-content-center"
+								>
+									<svg
+										class="cursor-pointer"
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M10.6665 1.34131L12.6665 3.34131L11.1418 4.86664L9.14184 2.86664L10.6665 1.34131ZM2.6665 9.33331V11.3333H4.6665L10.1992 5.80864L8.19917 3.80864L2.6665 9.33331ZM2.6665 13.3333H13.3332V14.6666H2.6665V13.3333Z"
+											fill="#808080"
+										/>
+									</svg>
+								</span>
+							</div>
+						</div>
+					</li>
+					<li class="item__wrapper">
+						<div class="item px-16 py-12">
+							<div
+								class="item__content w-100"
+								style="grid-template-columns: 5fr 1fr 1.8fr 0.5fr"
+							>
+								<div>
+									<p class="item__customer">Panadol Extra</p>
+								</div>
+								<span class="item__check fs-14 line-height-224">1</span>
+								<span class="item__check fs-14 flex-column align-items-end">
+									<p class="line-height-224">24.000</p>
+									<p class="fw-bold text__brand-blue line-height-224">48.000</p>
+								</span>
+								<span
+									class="item__check fs-14 flex-column align-items-end justify-content-center"
+								>
+									<svg
+										class="cursor-pointer"
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M10.6665 1.34131L12.6665 3.34131L11.1418 4.86664L9.14184 2.86664L10.6665 1.34131ZM2.6665 9.33331V11.3333H4.6665L10.1992 5.80864L8.19917 3.80864L2.6665 9.33331ZM2.6665 13.3333H13.3332V14.6666H2.6665V13.3333Z"
+											fill="#808080"
+										/>
+									</svg>
+								</span>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- Button Save Change -->
+			<div class="mt-18 px-16 py-12 bg-white">
+				<div class="gap-8 d-flex">
+					<button
+						class="btn text-nowrap bg__brand-blue w-100 fw-bold border-0 btn__text--white-color"
+						data-bs-toggle="modal"
+						data-bs-target="#Notify"
+					>
+						Lưu thay đổi
+					</button>
+					<svg
+						class="cursor-pointer"
+						style="flex-shrink: 0"
+						width="50"
+						height="100%"
+						viewBox="0 0 50 50"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						data-bs-toggle="modal"
+						data-bs-target="#MenuItem"
+					>
+						<rect width="48" height="48" rx="6" fill="#3279B7" />
+						<path
+							d="M24 23C23.175 23 22.5 23.675 22.5 24.5C22.5 25.325 23.175 26 24 26C24.825 26 25.5 25.325 25.5 24.5C25.5 23.675 24.825 23 24 23ZM29.5 23C28.675 23 28 23.675 28 24.5C28 25.325 28.675 26 29.5 26C30.325 26 31 25.325 31 24.5C31 23.675 30.325 23 29.5 23ZM18.5 23C17.675 23 17 23.675 17 24.5C17 25.325 17.675 26 18.5 26C19.325 26 20 25.325 20 24.5C20 23.675 19.325 23 18.5 23Z"
+							fill="white"
+						/>
+					</svg>
+				</div>
+			</div>
+			<!-- Menu Item -->
+			<div
+				class="modal fade"
+				id="MenuItem"
+				tabindex="-1"
+				aria-labelledby="MenuItem"
+				aria-hidden="true"
+				style="
+					border-radius: 0.6rem;
+					overflow: hidden;
+					transform: translateY(25%);
+				"
+			>
+				<div class="modal-dialog">
+					<ul
+						class="menu__item list-unstyled bg-white fs-14 line-height-224 modal-content"
+					>
+						<li class="px-12 py-12">In hóa đơn</li>
+						<hr />
+						<li class="px-12 py-12">Báo cáo QĐ 777/QĐ-QLD</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Modal Save Changes -->
+			<div
+				class="modal fade"
+				id="Notify"
+				tabindex="-1"
+				aria-labelledby="Notify"
+				aria-hidden="true"
+				style="transform: translateY(25%)"
+			>
+				<div
+					class="modal-dialog"
+					style="border-radius: 1.6rem; overflow: hidden"
+				>
+					<div
+						class="modal-content"
+						style="background-color: #f0f1f1 !important"
+					>
+						<p class="mt-24 fs-20 fw-semibold text-center">
+							"hokinhdoanh.online" say
+						</p>
+						<p class="mt-24 px-30 fs-14 text-center">
+							Việc sửa thông tin sẽ ảnh hưởng đến thông tin của các đơn hàng
+							xuất, bạn có đồng ý không?
+						</p>
+						<div class="mt-24 d-flex" style="border-top: 1px solid #b2b2b2">
+							<button
+								type="button"
+								data-bs-dismiss="modal"
+								class="w-50 border-0 fs-20 py-12 btn__text--infor-500"
+								style="border-right: 0.5px solid #b2b2b2 !important"
+							>
+								Hủy
+							</button>
+							<button
+								type="button"
+								class="w-50 border-0 fs-20 py-12 fw-semibold btn__text--infor-500"
+								style="border-left: 0.5px solid #b2b2b2 !important"
+							>
+								Ok
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Modal Update Information -->
+			<div
+				class="modal fade"
+				id="Update-1"
+				tabindex="-1"
+				aria-labelledby="Update-1"
+				aria-hidden="true"
+				style="transform: translateY(3%)"
+			>
+				<div
+					class="modal-dialog"
+					style="border-radius: 1.6rem; overflow: hidden"
+				>
+					<form class="modal-content">
+						<div class="px-16">
+							<div class="text-end">
+								<svg
+									class="mt-16 cursor-pointer"
+									type="button "
+									data-bs-dismiss="modal"
+									width="24"
+									height="25"
+									viewBox="0 0 24 25"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M12 11.4561L16.95 6.5061L18.364 7.9201L13.414 12.8701L18.364 17.8201L16.95 19.2341L12 14.2841L7.04999 19.2341L5.63599 17.8201L10.586 12.8701L5.63599 7.9201L7.04999 6.5061L12 11.4561Z"
+										fill="#B2B2B2"
+									/>
+								</svg>
+							</div>
+							<p
+								class="fw-bold fs-20 text__brand-accent text-center"
+								style="line-height: 2.6rem"
+							>
+								Sửa thông tin
+							</p>
+							<label class="label__input mt-8">Số lô</label>
+							<input type="text" class="input w-100 mb-8" placeholder="12ab" />
+							<label class="label__input mt-8">Ngày sản xuất</label>
+							<input
+								type="date"
+								class="input w-100 mb-8 date-format"
+								id="myDate"
+							/>
+							<label class="label__input mt-8">Ngày hết hạn</label>
+							<input type="date" class="input w-100 mb-8" />
+							<label class="label__input mt-8">Số lượng</label>
+							<input
+								type="number"
+								class="input w-100 mb-8"
+								placeholder="1"
+								min="1"
+							/>
+							<label class="label__input mt-8">Đơn giá</label>
+							<input
+								type="number"
+								class="input w-100 mb-8"
+								placeholder="13000"
+								min="0"
+							/>
+						</div>
+
+						<div class="mt-24 bg__neutral-grey-4">
+							<div class="px-12 py-12 d-flex gap-8">
+								<button
+									type="button"
+									data-bs-dismiss="modal"
+									class="w-50 fs-14 fw-bold btn btn__border--brand-blue btn__text--brand-blue"
+									style="border-radius: 6px; border-width: 2px"
+								>
+									Đóng
+								</button>
+								<button
+									type="button"
+									class="w-50 border-0 fs-14 btn fw-bold btn__text--white-color bg__brand-blue"
+									style="border-radius: 6px"
+								>
+									Cập nhập
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- Test -->
+			<div class="input-group date" id="datepicker">
+				<input
+					type="text"
+					class="form-control"
+					id="date"
+					placeholder="Date Of Birth"
+				/>
+				<span class="input-group-append">
+					<span class="input-group-text bg-light d-block">
+						<i class="fa fa-calendar"></i>
+					</span>
+				</span>
+			</div>
+		</main>
+
+		<!-- Bottom Navigation -->
 		<div class="bot-navigation">
 			<ul class="bot-navigation__list">
 				<li class="bot-navigation__item active">

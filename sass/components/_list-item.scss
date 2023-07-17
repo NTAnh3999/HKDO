@@ -50,9 +50,6 @@
 		&__customer {
 			color: $neutral-black-light;
 		}
-		&__price {
-			color: $success-600;
-		}
 		&__check {
 			@include flex(row, flex-end, center);
 		}
