@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Trang chu</title>
+		<title>Phieu Thu Chi Tiet</title>
 		<link rel="stylesheet" href="../bootstrap-5.0.2-dist/bootstrap.min.css" />
 		<link rel="stylesheet" href="../assets/styles/main.css" />
 		<script src="../bootstrap-5.0.2-dist/bootstrap.bundle.min.js"></script>
@@ -89,85 +89,340 @@
 			</ul>
 		</nav>
 		<!-- Page Content -->
-		<main class="mb-0">
+		<main>
 			<!-- Title -->
 			<div class="title">
 				<svg
-					width="24"
-					height="24"
-					viewBox="0 0 24 24"
+					width="18"
+					height="21"
+					viewBox="0 0 18 21"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
 				>
 					<path
-						d="M2.99979 13H3.99979V20C3.99979 21.103 4.89679 22 5.99979 22H17.9998C19.1028 22 19.9998 21.103 19.9998 20V13H20.9998C21.1975 13 21.3908 12.9413 21.5552 12.8314C21.7197 12.7215 21.8478 12.5654 21.9235 12.3827C21.9991 12.2 22.0189 11.9989 21.9804 11.805C21.9418 11.611 21.8466 11.4329 21.7068 11.293L12.7068 2.29302C12.614 2.20007 12.5038 2.12633 12.3825 2.07602C12.2612 2.02571 12.1311 1.99982 11.9998 1.99982C11.8685 1.99982 11.7384 2.02571 11.6171 2.07602C11.4958 2.12633 11.3856 2.20007 11.2928 2.29302L2.29279 11.293C2.15298 11.4329 2.05777 11.611 2.0192 11.805C1.98064 11.9989 2.00044 12.2 2.07611 12.3827C2.15178 12.5654 2.27992 12.7215 2.44433 12.8314C2.60874 12.9413 2.80204 13 2.99979 13ZM9.99979 20V15H13.9998V20H9.99979ZM11.9998 4.41402L17.9998 10.414V15L18.0008 20H15.9998V15C15.9998 13.897 15.1028 13 13.9998 13H9.99979C8.89679 13 7.99979 13.897 7.99979 15V20H5.99979V10.414L11.9998 4.41402Z"
+						d="M17 20.8701H1C0.734784 20.8701 0.48043 20.7648 0.292893 20.5772C0.105357 20.3897 0 20.1353 0 19.8701V1.87012C0 1.6049 0.105357 1.35055 0.292893 1.16301C0.48043 0.975474 0.734784 0.870117 1 0.870117H17C17.2652 0.870117 17.5196 0.975474 17.7071 1.16301C17.8946 1.35055 18 1.6049 18 1.87012V19.8701C18 20.1353 17.8946 20.3897 17.7071 20.5772C17.5196 20.7648 17.2652 20.8701 17 20.8701ZM16 18.8701V2.87012H2V18.8701H16ZM5 7.87012H13V9.87012H5V7.87012ZM5 11.8701H13V13.8701H5V11.8701Z"
 						fill="#808080"
 					/>
 				</svg>
-				<span class="title__text">Trang chủ</span>
+				<span class="title__text">Đơn thu #673</span>
 			</div>
-			<!-- Content -->
-			<div class="bg-white">
-				<p
-					class="text-center fs-14 line-height-224 fw-bold py-12"
-					style="color: #474747"
-				>
-					Tình hình kinh doanh 7 ngày qua
-				</p>
-				<!-- Note for Chart -->
-				<div class="d-flex gap-4 justify-content-center mb-12">
-					<div class="d-flex gap-2 align-items-center">
-						<div
-							style="width: 2.4rem; height: 1.2rem"
-							class="bg__error-400"
-						></div>
-						<span class="fs-12 line-height-192">Doanh số (nghìn đồng)</span>
+			<!-- Detail Receipt -->
+			<div class="detail__receipt">
+				<form action="/" class="bg-white">
+					<!-- Order Information -->
+					<p
+						class="btn__collapsed no-select px-16 py-12 fs-16 text__brand-blue d-flex justify-content-between fw-bold"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#order__information"
+						aria-expanded="false"
+						aria-controls="collapseOne"
+					>
+						<span>1. Thông tin đơn hàng</span>
+						<svg
+							class="chevrons-down"
+							width="24"
+							height="24"
+							viewBox="0 0 24 25"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M16.293 10.1631L12 14.4561L7.70703 10.1631L6.29303 11.5771L12 17.2841L17.707 11.5771L16.293 10.1631Z"
+								fill="#3279B7"
+							/>
+						</svg>
+					</p>
+					<div id="order__information" class="px-16">
+						<label class="label__input mt-8">Tên đơn hàng</label>
+						<input
+							type="text"
+							class="input w-100 mb-8"
+							placeholder="Amoxiciliin 500"
+							value="Amoxiciliin 500"
+						/>
+						<label class="label__input mt-8">Số chứng từ</label>
+						<input
+							type="text"
+							class="input w-100 mb-8"
+							placeholder="214126"
+							value="214126"
+						/>
+						<label class="label__input mt-8">Khách hàng</label>
+						<select class="form-select options mb-8">
+							<option value="0" selected>An Dương Vương</option>
+							<option value="1">Đặng Khắc Toàn</option>
+							<option value="1">Vũ Minh Anh</option>
+						</select>
+						<label class="label__input mt-8">Người sử dụng</label>
+						<input
+							type="text"
+							class="input w-100 mb-8"
+							placeholder="121212"
+							value="121212"
+						/>
+						<div class="gap-12 d-flex mt-8 mb-8">
+							<div class="w-100" style="max-width: calc(50% - 6px)">
+								<label class="label__input">Ngày</label>
+								<input type="date" class="input w-100" />
+							</div>
+							<div class="w-100" style="max-width: calc(50% - 6px)">
+								<label class="label__input">Thời gian</label>
+								<input
+									type="datetime"
+									class="input w-100"
+									placeholder="01:08:13"
+								/>
+							</div>
+						</div>
+						<div class="gap-12 d-flex mt-8 mb-8">
+							<div class="w-100" style="max-width: calc(50% - 6px)">
+								<label class="label__input">Thành tiền</label>
+								<input
+									type="number"
+									class="input w-100"
+									placeholder="314.000"
+								/>
+							</div>
+							<div class="w-100" style="max-width: calc(50% - 6px)">
+								<label class="label__input">Kiểu thanh toán</label>
+								<input type="text" class="input w-100" placeholder="Tiền mặt" />
+							</div>
+						</div>
+						<label class="label__input mt-8">Tính thuế VAT</label>
+						<select class="form-select options mb-8">
+							<option selected>Không tính thuế VAT</option>
+							<option value="1">Tính thuế VAT</option>
+						</select>
+						<label class="label__input mt-8">% VAT</label>
+						<select class="form-select options mb-8">
+							<option selected>5%</option>
+							<option value="10">10%</option>
+						</select>
+						<div class="gap-12 d-flex mt-8 mb-8">
+							<div class="w-100" style="max-width: calc(50% - 6px)">
+								<label class="label__input">Trạng thái</label>
+								<input
+									type="text"
+									class="input w-100"
+									placeholder="Đã trả tiền"
+								/>
+							</div>
+							<div class="w-100" style="max-width: calc(50% - 6px)">
+								<label class="label__input">Trạng thái HĐĐT</label>
+								<input
+									type="text"
+									class="input w-100"
+									placeholder="Chưa xuất"
+								/>
+							</div>
+						</div>
+						<label class="label__input mt-8">Ghi chú</label>
+						<input type="text" class="input w-100 mb-8" />
 					</div>
-					<div class="d-flex gap-2 align-items-center">
-						<div
-							style="width: 2.4rem; height: 1.2rem"
-							class="bg__infor-400"
-						></div>
-						<span class="fs-12 line-height-192">Số đơn hàng</span>
+					<!-- Prescription Information -->
+					<p
+						class="no-select btn__collapsed px-16 py-12 fs-16 text__brand-blue d-flex justify-content-between fw-bold"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#prescription__information"
+						aria-expanded="false"
+						aria-controls="collapseOne"
+					>
+						<span>2. Thông tin đơn thuốc</span>
+						<svg
+							class="chevrons-down"
+							width="24"
+							height="24"
+							viewBox="0 0 24 25"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M16.293 10.1631L12 14.4561L7.70703 10.1631L6.29303 11.5771L12 17.2841L17.707 11.5771L16.293 10.1631Z"
+								fill="#3279B7"
+							/>
+						</svg>
+					</p>
+					<div id="prescription__information" class="px-16">
+						<label class="label__input mt-8">Mã đơn thuốc</label>
+						<input
+							type="text"
+							class="input w-100 mb-8"
+							placeholder="40610mamadsyg"
+						/>
+						<label class="label__input mt-8">Họ tên bệnh nhân</label>
+						<input
+							type="text"
+							class="input w-100 mb-8"
+							placeholder="Đinh Quang Tèo"
+						/>
+						<label class="label__input mt-8">Ngày sinh</label>
+						<input type="text" class="input w-100 mb-8" />
+						<label class="label__input mt-8">Thông tin người giám hộ</label>
+						<input
+							type="text"
+							class="input w-100 mb-8"
+							placeholder="Đinh Quang Minh"
+						/>
+						<label class="label__input mt-8">Loại đơn thuốc</label>
+						<input
+							type="text"
+							class="input w-100 mb-8"
+							placeholder="Không chỉ định"
+						/>
+						<label class="label__input mt-8">Địa chỉ</label>
+						<input
+							type="text"
+							class="input w-100 mb-8"
+							placeholder="64c Phương Liệt, Hoàng Mai, HN"
+						/>
+						<label class="label__input mt-8">Giới tính</label>
+						<input type="text" class="input w-100 mb-8" placeholder="Nam" />
+						<label class="label__input mt-8">Tên bác sĩ</label>
+						<input
+							type="text"
+							class="input w-100 mb-8"
+							placeholder="Nguyễn Công Thịnh"
+						/>
+						<label class="label__input mt-8">Cơ sở khám chữa bệnh</label>
+						<input
+							type="text"
+							class="input w-100 mb-8"
+							placeholder="PHÒNG KHÁM BỆNH NỘI KHOA TƯ NHÂN"
+						/>
+						<label class="label__input mt-8">Ngày giờ kê đơn</label>
+						<input
+							type="text"
+							class="input w-100 mb-8"
+							placeholder="2023-04-19 11:18:57"
+						/>
+						<label class="label__input mt-8">Chuẩn đoán</label>
+						<input
+							type="text"
+							class="input w-100 mb-8"
+							placeholder="Viêm phế quản cấp"
+						/>
+						<label class="label__input mt-8">Kết luận</label>
+						<input
+							type="text"
+							class="input w-100 mb-8"
+							placeholder="Viêm phế quản cấp"
+						/>
+					</div>
+				</form>
+			</div>
+			<!-- List Item -->
+			<div class="list">
+				<div class="list-header">
+					<div class="list-header__title w-100">
+						<span>Tên</span>
+						<span class="text-nowrap">SL</span>
+						<span>Thành tiền</span>
 					</div>
 				</div>
-				<!-- Total -->
-				<div
-					class="px-12 pt-8 pb-8 d-flex align-items-center gap-3 justify-content-center"
-				>
-					<div
-						class="px-12 py-12 border-custom border-custom__radius-6 flex-fill"
-					>
-						<p class="fs-12 line-height-192">Tổng doanh số (đồng)</p>
-						<div class="d-flex gap-2 align-items-center">
-							<span
-								style="width: 1rem; height: 1rem"
-								class="bg__error-400 rounded-circle"
-							></span>
-							<span class="fs-20 line-height-260 fw-bold">12.450.000</span>
+				<ul class="list-item list-unstyled bg-white">
+					<li class="item__wrapper">
+						<div class="item px-16 py-12">
+							<div class="item__content w-100">
+								<div>
+									<p class="item__customer">Panadol Extra</p>
+								</div>
+								<span class="item__check fs-14">1</span>
+								<span class="item__check fs-14 flex-column align-items-end">
+									<p class="line-height-224">24.000</p>
+									<p class="fw-bold text__brand-blue line-height-224">48.000</p>
+								</span>
+							</div>
 						</div>
-					</div>
-					<div
-						class="px-12 py-12 border-custom border-custom__radius-6 flex-fill"
-					>
-						<p class="fs-12 line-height-192">Tổng số đơn hàng</p>
-						<div class="d-flex gap-2 align-items-center">
-							<span
-								style="width: 1rem; height: 1rem"
-								class="bg__infor-400 rounded-circle"
-							></span>
-							<span class="fs-20 line-height-260 fw-bold">56</span>
+					</li>
+					<li class="item__wrapper">
+						<div class="item px-16 py-12">
+							<div class="item__content w-100">
+								<div>
+									<p class="item__customer">Panadol Extra</p>
+								</div>
+								<span class="item__check fs-14">1</span>
+								<span class="item__check fs-14 flex-column align-items-end">
+									<p class="line-height-224">24.000</p>
+									<p class="fw-bold text__brand-blue line-height-224">48.000</p>
+								</span>
+							</div>
 						</div>
-					</div>
+					</li>
+					<li class="item__wrapper">
+						<div class="item px-16 py-12">
+							<div class="item__content w-100">
+								<div>
+									<p class="item__customer">Panadol Extra</p>
+								</div>
+								<span class="item__check fs-14 line-height-224">1</span>
+								<span class="item__check fs-14 flex-column align-items-end">
+									<p class="line-height-224">24.000</p>
+									<p class="fw-bold text__brand-blue line-height-224">48.000</p>
+								</span>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- Button Save Change -->
+			<div class="mt-18 px-16 py-12 bg-white">
+				<div class="gap-8 d-flex">
+					<button
+						class="btn text-nowrap bg__brand-blue w-100 fw-bold border-0 text-white"
+					>
+						Lưu thay đổi
+					</button>
+					<svg
+						class="cursor-pointer"
+						width="50"
+						height="100%"
+						viewBox="0 0 48 48"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						data-bs-toggle="modal"
+						data-bs-target="#MenuItem"
+					>
+						<rect width="48" height="48" rx="6" fill="#3279B7" />
+						<path
+							d="M24 23C23.175 23 22.5 23.675 22.5 24.5C22.5 25.325 23.175 26 24 26C24.825 26 25.5 25.325 25.5 24.5C25.5 23.675 24.825 23 24 23ZM29.5 23C28.675 23 28 23.675 28 24.5C28 25.325 28.675 26 29.5 26C30.325 26 31 25.325 31 24.5C31 23.675 30.325 23 29.5 23ZM18.5 23C17.675 23 17 23.675 17 24.5C17 25.325 17.675 26 18.5 26C19.325 26 20 25.325 20 24.5C20 23.675 19.325 23 18.5 23Z"
+							fill="white"
+						/>
+					</svg>
 				</div>
-				<!-- Chart -->
-				<div class="mt-12 mb-12">
-					<div class="px-12">
-						<canvas id="chart__line"></canvas>
-					</div>
+			</div>
+
+			<!-- Menu Item -->
+			<div
+				class="modal fade"
+				id="MenuItem"
+				tabindex="-1"
+				aria-labelledby="MenuItem"
+				aria-hidden="true"
+				style="
+					border-radius: 0.6rem;
+					overflow: hidden;
+					transform: translateY(25%);
+				"
+			>
+				<div class="modal-dialog">
+					<ul
+						class="menu__item list-unstyled bg-white fs-14 line-height-224 modal-content"
+					>
+						<li class="px-12 py-12">Trả tiền</li>
+						<li class="px-12 py-12">In hóa đơn</li>
+						<li class="px-12 py-12">Xuất hóa đơn điện từ</li>
+						<li class="px-12 py-12">Trả hàng</li>
+						<hr />
+						<li class="px-12 py-12">Báo cáo QĐ 777/QĐ-QLD</li>
+						<li class="px-12 py-12">Báo cáo QĐ 777/QĐ-QLD - Xuất hủy</li>
+						<li class="px-12 py-12">Xóa Báo cáo QĐ 777/QĐ-QLD - Xuất hủy</li>
+					</ul>
 				</div>
 			</div>
 		</main>
+
 		<!-- Bottom Navigation -->
 		<div class="bot-navigation">
 			<ul class="bot-navigation__list">
@@ -259,78 +514,4 @@
 			</ul>
 		</div>
 	</body>
-	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-	<script>
-		const ctx = document.getElementById("chart__line");
-
-		new Chart(ctx, {
-			type: "line",
-			data: {
-				labels: ["25/6", "26/6", "27/6", "28/6", "29/6", "30/6", "1/7"],
-				datasets: [
-					{
-						data: [140, 190, 130, 130, 60, 220, 135],
-						borderWidth: 3,
-						backgroundColor: "#eb3b5b",
-						borderColor: "#eb3b5b",
-						yAxisID: "y",
-						tension: 0.01,
-						pointRadius: 0,
-					},
-					{
-						data: [40, 140, 90, 160, 140, 150, 140],
-						borderWidth: 3,
-						backgroundColor: "#3395ff",
-						borderColor: "#3395ff",
-						yAxisID: "y1",
-						tension: 0.01,
-						pointRadius: 0,
-					},
-				],
-			},
-
-			options: {
-				responsive: true,
-				plugins: {
-					legend: {
-						display: false,
-					},
-				},
-				interaction: {
-					mode: "index",
-					intersect: false,
-				},
-
-				stacked: false,
-				scales: {
-					x: {
-						grid: {
-							display: false,
-						},
-					},
-					y: {
-						type: "linear",
-						display: true,
-						position: "left",
-						ticks: {
-							display: true,
-						},
-						beginAtZero: true,
-					},
-					y1: {
-						type: "linear",
-						display: true,
-						position: "right",
-						ticks: {
-							display: true,
-						},
-						beginAtZero: true,
-						grid: {
-							drawOnChartArea: false,
-						},
-					},
-				},
-			},
-		});
-	</script>
 </html>

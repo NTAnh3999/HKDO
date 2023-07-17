@@ -1,9 +1,49 @@
-input {
+.input {
 	outline: none;
 	padding-left: 3rem;
 	border: 1px solid $neutral-grey-3;
 	border-radius: 6px;
-	padding: 1.2rem 3.5rem;
-	width: 100%;
+	padding: 1.2rem;
 	font-size: 1.6rem;
+	&,
+	&__search {
+		border-radius: 6px;
+		border: 1px solid $neutral-grey-3;
+		font-size: 1.6rem;
+		padding: 1.2rem;
+		outline: none;
+	}
+	&__search {
+		padding: 1.2rem 4.2rem;
+
+		&:focus {
+			border: 1px solid $brand-yellow;
+			background-color: $light-yellow;
+		}
+	}
+	&__group {
+		position: relative;
+	}
+	&__search-icon,
+	&__barcode-icon {
+		position: absolute;
+		top: calc(50% - 12px);
+	}
+	&__search-icon {
+		left: 12px;
+	}
+	&__barcode-icon {
+		right: 12px;
+	}
+	&[type="text"] {
+		background-color: $neutral-grey-3;
+		&:forcus {
+			background-color: white;
+		}
+	}
+}
+.label__input {
+	font-size: 1.4rem;
+	line-height: 2.24rem;
+	color: $neutral-grey-1;
 }

@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Trang chu</title>
+		<title>Bang ke xuat nhap kho</title>
 		<link rel="stylesheet" href="../bootstrap-5.0.2-dist/bootstrap.min.css" />
 		<link rel="stylesheet" href="../assets/styles/main.css" />
 		<script src="../bootstrap-5.0.2-dist/bootstrap.bundle.min.js"></script>
@@ -89,8 +89,7 @@
 			</ul>
 		</nav>
 		<!-- Page Content -->
-		<main class="mb-0">
-			<!-- Title -->
+		<main>
 			<div class="title">
 				<svg
 					width="24"
@@ -100,71 +99,234 @@
 					xmlns="http://www.w3.org/2000/svg"
 				>
 					<path
-						d="M2.99979 13H3.99979V20C3.99979 21.103 4.89679 22 5.99979 22H17.9998C19.1028 22 19.9998 21.103 19.9998 20V13H20.9998C21.1975 13 21.3908 12.9413 21.5552 12.8314C21.7197 12.7215 21.8478 12.5654 21.9235 12.3827C21.9991 12.2 22.0189 11.9989 21.9804 11.805C21.9418 11.611 21.8466 11.4329 21.7068 11.293L12.7068 2.29302C12.614 2.20007 12.5038 2.12633 12.3825 2.07602C12.2612 2.02571 12.1311 1.99982 11.9998 1.99982C11.8685 1.99982 11.7384 2.02571 11.6171 2.07602C11.4958 2.12633 11.3856 2.20007 11.2928 2.29302L2.29279 11.293C2.15298 11.4329 2.05777 11.611 2.0192 11.805C1.98064 11.9989 2.00044 12.2 2.07611 12.3827C2.15178 12.5654 2.27992 12.7215 2.44433 12.8314C2.60874 12.9413 2.80204 13 2.99979 13ZM9.99979 20V15H13.9998V20H9.99979ZM11.9998 4.41402L17.9998 10.414V15L18.0008 20H15.9998V15C15.9998 13.897 15.1028 13 13.9998 13H9.99979C8.89679 13 7.99979 13.897 7.99979 15V20H5.99979V10.414L11.9998 4.41402Z"
+						d="M9 6H11V20H9V6ZM13 8H15V20H13V8ZM17 4H19V20H17V4ZM5 12H7V20H5V12Z"
 						fill="#808080"
 					/>
 				</svg>
-				<span class="title__text">Trang chủ</span>
+				<span class="title__text">Bảng kê nhập xuất kho</span>
 			</div>
-			<!-- Content -->
-			<div class="bg-white">
-				<p
-					class="text-center fs-14 line-height-224 fw-bold py-12"
-					style="color: #474747"
-				>
-					Tình hình kinh doanh 7 ngày qua
-				</p>
-				<!-- Note for Chart -->
-				<div class="d-flex gap-4 justify-content-center mb-12">
-					<div class="d-flex gap-2 align-items-center">
-						<div
-							style="width: 2.4rem; height: 1.2rem"
-							class="bg__error-400"
-						></div>
-						<span class="fs-12 line-height-192">Doanh số (nghìn đồng)</span>
-					</div>
-					<div class="d-flex gap-2 align-items-center">
-						<div
-							style="width: 2.4rem; height: 1.2rem"
-							class="bg__infor-400"
-						></div>
-						<span class="fs-12 line-height-192">Số đơn hàng</span>
+			<!-- List -->
+			<div class="import__manifest">
+				<div class="list-header">
+					<label for="check-all" class="checkbox__custom mr-12 box__select"
+						><svg
+							width="100%"
+							height="100%"
+							viewBox="0 0 24 25"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M9.99999 15.5421L19.192 6.34912L20.607 7.76312L9.99999 18.3701L3.63599 12.0061L5.04999 10.5921L9.99999 15.5421Z"
+								fill="#FFFFFF"
+							/>
+						</svg>
+					</label>
+					<input type="checkbox" id="check-all" hidden />
+					<div class="list-header__title w-100">
+						<span class="d-flex align-items-center">Tên thuốc</span>
+						<span
+							class="d-flex align-items-center justify-content-end text-nowrap"
+							>ĐV</span
+						>
+						<span>Nhập <br />- xuất</span>
 					</div>
 				</div>
-				<!-- Total -->
+				<ul class="list-item list-unstyled bg-white">
+					<li class="item__wrapper">
+						<div class="item px-16 py-12">
+							<label for="item-1" class="checkbox__custom mr-12 box__select">
+								<svg
+									width="100%"
+									height="100%"
+									viewBox="0 0 24 25"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M9.99999 15.5421L19.192 6.34912L20.607 7.76312L9.99999 18.3701L3.63599 12.0061L5.04999 10.5921L9.99999 15.5421Z"
+										fill="#FFFFFF"
+									/>
+								</svg>
+							</label>
+							<input type="checkbox" id="item-1" hidden />
+							<div class="item__content w-100">
+								<div>
+									<p class="fs-12 line-height-192 text__neutral-grey-1">
+										15/06/2023
+									</p>
+									<p class="item__name">Panadol Extra</p>
+									<p class="item__price text__neutral-grey-1">DQG0000875</p>
+								</div>
+								<span class="item__check">
+									<p class="fs-14 line-height-224">Viên</p>
+								</span>
+								<span
+									class="d-flex flex-column justify-content-center align-items-end"
+								>
+									<p class="fs-14 line-height-224 text__success-600">+10</p>
+									<p class="fs-14 line-height-224 text__error-500">-100</p>
+								</span>
+							</div>
+						</div>
+					</li>
+					<li class="item__wrapper">
+						<div class="item px-16 py-12">
+							<label for="item-1" class="checkbox__custom mr-12 box__select">
+								<svg
+									width="100%"
+									height="100%"
+									viewBox="0 0 24 25"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M9.99999 15.5421L19.192 6.34912L20.607 7.76312L9.99999 18.3701L3.63599 12.0061L5.04999 10.5921L9.99999 15.5421Z"
+										fill="#FFFFFF"
+									/>
+								</svg>
+							</label>
+							<input type="checkbox" id="item-1" hidden />
+							<div class="item__content w-100">
+								<div>
+									<p class="fs-12 line-height-192 text__neutral-grey-1">
+										15/06/2023
+									</p>
+									<p class="item__name">Panadol Extra</p>
+									<p class="item__price text__neutral-grey-1">DQG0000875</p>
+								</div>
+								<span class="item__check">
+									<p class="fs-14 line-height-224">Viên</p>
+								</span>
+								<span
+									class="d-flex flex-column justify-content-center align-items-end"
+								>
+									<p class="fs-14 line-height-224 text__success-600">+10</p>
+									<p class="fs-14 line-height-224 text__error-500">-100</p>
+								</span>
+							</div>
+						</div>
+					</li>
+					<li class="item__wrapper">
+						<div class="item px-16 py-12">
+							<label for="item-1" class="checkbox__custom mr-12 box__select">
+								<svg
+									width="100%"
+									height="100%"
+									viewBox="0 0 24 25"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M9.99999 15.5421L19.192 6.34912L20.607 7.76312L9.99999 18.3701L3.63599 12.0061L5.04999 10.5921L9.99999 15.5421Z"
+										fill="#FFFFFF"
+									/>
+								</svg>
+							</label>
+							<input type="checkbox" id="item-1" hidden />
+							<div class="item__content w-100">
+								<div>
+									<p class="fs-12 line-height-192 text__neutral-grey-1">
+										15/06/2023
+									</p>
+									<p class="item__name">Panadol Extra</p>
+									<p class="item__price text__neutral-grey-1">DQG0000875</p>
+								</div>
+								<span class="item__check">
+									<p class="fs-14 line-height-224">Viên</p>
+								</span>
+								<span
+									class="d-flex flex-column justify-content-center align-items-end"
+								>
+									<p class="fs-14 line-height-224 text__success-600">+10</p>
+									<p class="fs-14 line-height-224 text__error-500">-100</p>
+								</span>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- Pagination -->
+			<nav aria-label="Page navigation example">
+				<ul class="pagination bg-white">
+					<li class="page-item">
+						<a class="page-link" href="#" aria-label="Previous">
+							<span aria-hidden="true">&laquo;</span>
+						</a>
+					</li>
+					<li class="page-item active"><a class="page-link" href="#">1</a></li>
+					<li class="page-item"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item"><a class="page-link" href="#">4</a></li>
+					<li class="page-item"><a class="page-link" href="#">5</a></li>
+					<li class="page-item">
+						<a class="page-link" href="#" aria-label="Next">
+							<span aria-hidden="true">&raquo;</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- Total -->
+			<div
+				class="box__not-select px-16 total mt-16 justify-content-between align-items-center bg-white pt-8 pb-8"
+			>
+				<div class="fs-14 line-height-224 fw-bold">Tổng</div>
 				<div
-					class="px-12 pt-8 pb-8 d-flex align-items-center gap-3 justify-content-center"
+					class="fs-14 line-height-224 fw-bold d-flex flex-column justify-content-end"
 				>
-					<div
-						class="px-12 py-12 border-custom border-custom__radius-6 flex-fill"
-					>
-						<p class="fs-12 line-height-192">Tổng doanh số (đồng)</p>
-						<div class="d-flex gap-2 align-items-center">
-							<span
-								style="width: 1rem; height: 1rem"
-								class="bg__error-400 rounded-circle"
-							></span>
-							<span class="fs-20 line-height-260 fw-bold">12.450.000</span>
-						</div>
-					</div>
-					<div
-						class="px-12 py-12 border-custom border-custom__radius-6 flex-fill"
-					>
-						<p class="fs-12 line-height-192">Tổng số đơn hàng</p>
-						<div class="d-flex gap-2 align-items-center">
-							<span
-								style="width: 1rem; height: 1rem"
-								class="bg__infor-400 rounded-circle"
-							></span>
-							<span class="fs-20 line-height-260 fw-bold">56</span>
-						</div>
-					</div>
+					<span class="text__success-600">+402</span>
+					<span class="text__error-500">-402</span>
 				</div>
-				<!-- Chart -->
-				<div class="mt-12 mb-12">
-					<div class="px-12">
-						<canvas id="chart__line"></canvas>
-					</div>
+			</div>
+			<div
+				class="box__select px-16 total mt-16 justify-content-between align-items-center bg-white pt-8 pb-8"
+			>
+				<div class="fs-14 line-height-224 fw-bold">Đã chọn</div>
+				<div
+					class="fs-14 line-height-224 fw-bold d-flex flex-column justify-content-end"
+				>
+					<span class="text__success-600">+402</span>
+					<span class="text__error-500">-402</span>
+				</div>
+			</div>
+			<!-- Button -->
+			<div class="px-16 py-12 bg-white">
+				<button
+					class="btn__select-import-manifest btn btn__select-receipts text-nowrap bg-white w-100 fw-bold btn__border--brand-blue btn__text--brand-blue"
+				>
+					<svg
+						width="24"
+						height="25"
+						viewBox="0 0 24 25"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M4 7.87012H15V9.87012H4V7.87012ZM4 11.8701H15V13.8701H4V11.8701ZM4 15.8701H11V17.8701H4V15.8701ZM19.299 13.1621L14.999 17.4531L13.707 16.1621L12.293 17.5771L14.999 20.2811L20.711 14.5781L19.299 13.1621Z"
+							fill="#3279B7"
+						/>
+					</svg>
+					Chọn nhiều
+				</button>
+				<div class="gap-8 box__select">
+					<button
+						type="button"
+						class="btn__no-select-import-manifest btn btn__no-select-receipts text-nowrap bg-white w-100 fw-bold btn__border--brand-blue btn__text--brand-blue"
+					>
+						<svg
+							width="24"
+							height="25"
+							viewBox="0 0 24 25"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M4 7.87012H15V9.87012H4V7.87012ZM4 11.8701H15V13.8701H4V11.8701ZM4 15.8701H11V17.8701H4V15.8701ZM19.299 13.1621L14.999 17.4531L13.707 16.1621L12.293 17.5771L14.999 20.2811L20.711 14.5781L19.299 13.1621Z"
+								fill="#3279B7"
+							/>
+						</svg>
+						Bỏ chọn
+					</button>
 				</div>
 			</div>
 		</main>
@@ -259,78 +421,5 @@
 			</ul>
 		</div>
 	</body>
-	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-	<script>
-		const ctx = document.getElementById("chart__line");
-
-		new Chart(ctx, {
-			type: "line",
-			data: {
-				labels: ["25/6", "26/6", "27/6", "28/6", "29/6", "30/6", "1/7"],
-				datasets: [
-					{
-						data: [140, 190, 130, 130, 60, 220, 135],
-						borderWidth: 3,
-						backgroundColor: "#eb3b5b",
-						borderColor: "#eb3b5b",
-						yAxisID: "y",
-						tension: 0.01,
-						pointRadius: 0,
-					},
-					{
-						data: [40, 140, 90, 160, 140, 150, 140],
-						borderWidth: 3,
-						backgroundColor: "#3395ff",
-						borderColor: "#3395ff",
-						yAxisID: "y1",
-						tension: 0.01,
-						pointRadius: 0,
-					},
-				],
-			},
-
-			options: {
-				responsive: true,
-				plugins: {
-					legend: {
-						display: false,
-					},
-				},
-				interaction: {
-					mode: "index",
-					intersect: false,
-				},
-
-				stacked: false,
-				scales: {
-					x: {
-						grid: {
-							display: false,
-						},
-					},
-					y: {
-						type: "linear",
-						display: true,
-						position: "left",
-						ticks: {
-							display: true,
-						},
-						beginAtZero: true,
-					},
-					y1: {
-						type: "linear",
-						display: true,
-						position: "right",
-						ticks: {
-							display: true,
-						},
-						beginAtZero: true,
-						grid: {
-							drawOnChartArea: false,
-						},
-					},
-				},
-			},
-		});
-	</script>
+	<script src="/scripts/bangkenhapxuatkho.js"></script>
 </html>

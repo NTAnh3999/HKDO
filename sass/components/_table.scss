@@ -1,0 +1,29 @@
+.thead {
+	font-size: 1.4rem;
+	font-weight: 600;
+	padding: 1rem;
+	&__col {
+		display: inline-block;
+	}
+	&--blue {
+		background-color: $light-blue;
+	}
+	&--neutral-grey-3 {
+		background-color: $neutral-grey-3;
+	}
+}
+.col-3 {
+	text-align: right;
+}
+tr > * {
+	padding: 8px 0;
+}
+tr > *:not(:first-child) {
+	text-align: right;
+}
+tr > *:first-child {
+	padding-left: 1rem;
+}
+tr > *:last-child {
+	padding-right: 1rem;
+}

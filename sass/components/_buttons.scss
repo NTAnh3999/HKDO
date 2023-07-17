@@ -1,0 +1,50 @@
+.btn {
+	font-weight: 700;
+	font-size: 1.4rem;
+	line-height: 2.24rem;
+	color: $white-color;
+	border-radius: 6px;
+	font-size: Arial;
+	outline: none;
+	padding-block: 1.2rem;
+	@include flex(row, center, center);
+	&--warning-500 {
+		background-color: $warning-500;
+		padding: 1.3rem 1.6rem;
+	}
+	&__border {
+		&--brand-blue {
+			border: 1px solid $brand-blue;
+		}
+		&--neutral-grey-2 {
+			border: 1px solid $neutral-grey-2;
+		}
+	}
+	&__text {
+		&--brand-blue {
+			color: $brand-blue;
+			&:hover {
+				color: rgba($brand-blue, 0.8);
+			}
+		}
+		&--white-color {
+			color: $white-color;
+			&:hover {
+				color: rgba($white-color, 0.8);
+			}
+		}
+		&--infor-500 {
+			color: $infor-500;
+			&:hover {
+				color: rgba($infor-500, 0.8);
+			}
+		}
+	}
+	&__collapsed .chevrons-down {
+		transition: transform 0.5s ease;
+		transform: rotate(180deg);
+	}
+	&__collapsed.collapsed .chevrons-down {
+		transform: rotate(0deg);
+	}
+}

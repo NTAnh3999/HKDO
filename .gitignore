@@ -1,0 +1,4 @@
+#Ignore file .css.map
+*.css.map
+#Ignore file main.css 
+assets/styles/main.css
