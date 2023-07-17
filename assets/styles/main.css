@@ -16,8 +16,21 @@
 .bg__brand-yellow {
   background-color: #fedd02;
 }
+.bg__error-400 {
+  background-color: #eb3b5b;
+}
 .bg__success-600 {
   background-color: #278d48;
+}
+.bg__infor-400 {
+  background-color: #3395ff;
+}
+
+.border-custom {
+  border: 1px solid #e5e5e5;
+}
+.border-custom__radius-6 {
+  border-radius: 0.6rem;
 }
 
 .mr-12 {
