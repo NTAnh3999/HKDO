@@ -1,0 +1,18 @@
+.cart {
+	background: $brand-blue;
+	width: 4.5rem;
+	height: 4.5rem;
+	border-radius: 5px;
+	@include flex(row, center, center);
+}
+.cart-container {
+	padding: 1.5rem 2rem;
+	box-shadow: 0 -2px 4px rgba(#011222, 0.1);
+	margin-bottom: 8rem;
+	background-color: $white-color;
+}
+.badge {
+	font-size: 1.2rem;
+	left: 95%;
+	top: 10%;
+}

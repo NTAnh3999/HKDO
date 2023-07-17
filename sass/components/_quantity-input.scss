@@ -1,0 +1,43 @@
+.quantity {
+	&--border {
+		display: inline-block;
+		border: 1px solid $neutral-grey-3;
+		border-radius: 5px;
+		overflow: hidden;
+	}
+	&__btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: $brand-blue;
+		&--small {
+			width: 3.2rem;
+			font-size: 2rem;
+			&:first-of-type {
+				border-right: 1px solid $neutral-grey-3;
+			}
+			&:last-of-type {
+				border-left: 1px solid $neutral-grey-3;
+			}
+		}
+
+		&--large {
+			width: 3.5rem;
+			font-size: 2rem;
+		}
+	}
+	&__input {
+		font-weight: 600;
+		text-align: center;
+		outline: none;
+		border: none;
+		&--large {
+			width: 75%;
+			font-size: 2rem;
+		}
+		&--small {
+			width: 4rem;
+			font-size: 1.6rem;
+		}
+	}
+}
