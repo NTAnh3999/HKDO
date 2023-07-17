@@ -17,8 +17,20 @@
 	&__brand-yellow {
 		background-color: $brand-yellow;
 	}
+	&__error-400 {
+		background-color: $error-400;
+	}
 	&__success-600 {
 		background-color: $success-600;
+	}
+	&__infor-400 {
+		background-color: $infor-400;
+	}
+}
+.border-custom {
+	border: 1px solid $neutral-grey-3;
+	&__radius-6 {
+		border-radius: 0.6rem;
 	}
 }
 .mr {
