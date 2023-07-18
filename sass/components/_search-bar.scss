@@ -17,7 +17,7 @@
 			border: 1px solid $neutral-grey-2;
 			background-color: $neutral-white-light;
 			& > input {
-				background-color: $neutral-white-light;
+				background-color: $neutral-white-light !important;
 				padding: 0 0.8rem;
 			}
 		}

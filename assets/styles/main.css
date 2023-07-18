@@ -459,7 +459,7 @@
   background-color: #f9f9f9;
 }
 .search-bar__input--receipts > input {
-  background-color: #f9f9f9;
+  background-color: #f9f9f9 !important;
   padding: 0 0.8rem;
 }
 
@@ -766,9 +766,6 @@ tr > *:last-child {
   padding: 0;
   border-top: 1px solid #e5e5e5;
 }
-.bot-navigation__item {
-  padding: 1.2rem 8px;
-}
 .bot-navigation__item.active {
   color: #3279b7;
   border-top: 3px solid #3279b7;
@@ -786,6 +783,7 @@ tr > *:last-child {
   text-decoration: none;
   font-size: 1.2rem;
   line-height: 1.38rem;
+  padding: 1.2rem 8px;
 }
 .bot-navigation__text {
   padding-top: 4px;
