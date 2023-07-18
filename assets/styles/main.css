@@ -52,6 +52,9 @@
 .mt-24 {
   margin-top: 2.4rem;
 }
+.mt-32 {
+  margin-top: 3.2rem;
+}
 .mt-60 {
   margin-top: 6rem;
 }
@@ -110,12 +113,18 @@
 .pt-12 {
   padding-top: 1.2rem;
 }
+.pt-24 {
+  padding-top: 2.4rem;
+}
 
 .pb-8 {
   padding-bottom: 0.8rem;
 }
 .pb-12 {
   padding-bottom: 1.2rem;
+}
+.pb-24 {
+  padding-bottom: 2.4rem;
 }
 
 .px-8 {
@@ -301,6 +310,34 @@
 .btn__collapsed.collapsed .chevrons-down {
   transform: rotate(0deg);
 }
+.btn__circle {
+  width: 4rem;
+  height: 2rem;
+  background-color: #b2b2b2;
+  border: 1px solid #808080;
+  border-radius: 999px;
+  padding-block: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+.btn__circle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
+  width: 40%;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  background-color: white;
+  transition: all 0.1s ease-out;
+}
+.btn__circle:has(~ input[type=checkbox]:checked) {
+  background-color: #007aff;
+}
+.btn__circle:has(~ input[type=checkbox]:checked)::before {
+  left: 50%;
+}
 
 .quantity--border {
   display: inline-block;
@@ -459,7 +496,7 @@
   background-color: #f9f9f9;
 }
 .search-bar__input--receipts > input {
-  background-color: #f9f9f9;
+  background-color: #f9f9f9 !important;
   padding: 0 0.8rem;
 }
 
@@ -766,9 +803,6 @@ tr > *:last-child {
   padding: 0;
   border-top: 1px solid #e5e5e5;
 }
-.bot-navigation__item {
-  padding: 1.2rem 8px;
-}
 .bot-navigation__item.active {
   color: #3279b7;
   border-top: 3px solid #3279b7;
@@ -786,6 +820,7 @@ tr > *:last-child {
   text-decoration: none;
   font-size: 1.2rem;
   line-height: 1.38rem;
+  padding: 1.2rem 8px;
 }
 .bot-navigation__text {
   padding-top: 4px;
@@ -820,3 +855,10 @@ body {
 p {
   margin-bottom: 0 !important;
 }
+
+input[type=text]:focus {
+  background-color: white;
+  transition: all 0.1s ease-out;
+}
+
+/*# sourceMappingURL=main.css.map */
