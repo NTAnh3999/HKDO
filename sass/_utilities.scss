@@ -77,11 +77,20 @@
 	&__neutral-grey-4 {
 		background-color: $neutral-grey-4;
 	}
+	&__success-500 {
+		background-color: $success-500;
+	}
 	&__brand-blue {
 		background-color: $brand-blue;
 	}
+	&__brand-accent {
+		background-color: $brand-accent;
+	}
 	&__neutral-grey-2 {
 		background-color: $neutral-grey-2;
+	}
+	&__neutral-grey-3 {
+		background-color: $neutral-grey-3;
 	}
 }
 .mb {

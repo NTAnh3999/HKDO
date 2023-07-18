@@ -1,8 +1,7 @@
 .search-bar {
-	@include flex(row, space-around, center);
-	padding: 1.2rem 0;
-	// @include flex(row, flex-start, center);
-	// padding: 1.2rem 1.6rem;
+	@include flex(row, space-between, center);
+	padding: 1.2rem 1.6rem;
+
 	gap: 1.2rem;
 
 	&__input,
@@ -18,7 +17,7 @@
 			border: 1px solid $neutral-grey-2;
 			background-color: $neutral-white-light;
 			& > input {
-				background-color: $neutral-white-light;
+				background-color: $neutral-white-light !important;
 				padding: 0 0.8rem;
 			}
 		}

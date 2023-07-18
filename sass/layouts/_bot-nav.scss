@@ -1,9 +1,11 @@
 .bot-navigation {
 	position: fixed;
 	bottom: 0;
+	left: 0;
+	right: 0;
 	z-index: 10;
 	max-width: 576px;
-	width: 100%;
+	width: auto;
 	margin: 0 auto;
 	padding: 0 1rem;
 	background-color: $white-color;
@@ -14,7 +16,6 @@
 		border-top: 1px solid $neutral-grey-3;
 	}
 	&__item {
-		padding: 1.2rem 8px;
 		&.active {
 			color: $brand-blue;
 			border-top: 3px solid $brand-blue;
@@ -29,6 +30,7 @@
 		text-decoration: none;
 		font-size: 1.2rem;
 		line-height: 1.38rem;
+		padding: 1.2rem 8px;
 	}
 
 	&__text {
